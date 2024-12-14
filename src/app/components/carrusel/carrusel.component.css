@@ -4,13 +4,19 @@ body{
 }
 
 h2{
+  position: relative;
+  bottom: 30px;
   color: #fff;
 }
 p{
+  position: relative;
+  bottom: 30px;
   color: #fff;
 }
 
 span{
+  position: relative;
+  bottom: 30px;
   color: #fff;
 }
 .carousel-container {
@@ -52,13 +58,13 @@ span{
   
   .btn {
     position: absolute;
-    top: 50%;
+    top: 200%;
     transform: translateY(-50%);
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     color: #333;
-    font-size: 24px;
-    padding: 10px 15px;
+    font-size: 1px;
+    padding: 5px 5px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -109,7 +115,11 @@ span{
   
   @media (max-width: 768px) {
     .carousel-container {
+      position: relative;
+      top: 30px;
       aspect-ratio: 1 / 1;
+      width: 500px;
+      height: 500px;
     }
   
     .slide {
@@ -140,7 +150,8 @@ span{
   
   @media (max-width: 480px) {
     .carousel-container {
-      border-radius: 0;
+      width: 10px;
+      height: 20px;
     }
   
     .slide-content {
