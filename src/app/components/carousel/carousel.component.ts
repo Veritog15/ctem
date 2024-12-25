@@ -1,35 +1,12 @@
-import { NgFor } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import {
-  CarouselComponent,
-  CarouselControlComponent,
-  CarouselIndicatorsComponent,
-  CarouselInnerComponent,
-  CarouselItemComponent,
-  ThemeDirective
-} from '@coreui/angular';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'docs-carousel03',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss'],
+  selector: 'app-carousel',
   standalone: true,
-  imports: [ThemeDirective, CarouselComponent, CarouselIndicatorsComponent, CarouselInnerComponent, NgFor, CarouselItemComponent, CarouselControlComponent, RouterLink]
+  imports: [],
+  templateUrl: './carousel.component.html',
+  styleUrl: './carousel.component.css'
 })
-export class Carousel03Component implements OnInit {
+export class CarouselComponent {
 
-  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
-
-  ngOnInit(): void {
-    this.slides[0] = {
-      src: './assets/image3.png'
-    };
-    this.slides[1] = {
-      src: './assets/image3.png'
-    };
-    this.slides[2] = {
-      src: './assets/image3.png'
-    };
-  }
 }

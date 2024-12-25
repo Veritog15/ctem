@@ -6,11 +6,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { CarruselComponent } from '../../components/carrusel/carrusel.component';
+import { CarouselComponent } from "../../components/carousel/carousel.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonComponent, CardsComponent, CarouselimgComponent, FooterComponent, RouterLink, CarruselComponent],
+  imports: [ButtonComponent, FooterComponent, CarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
