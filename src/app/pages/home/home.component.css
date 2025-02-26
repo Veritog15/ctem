@@ -1,12 +1,11 @@
 body {
-  margin: -10px;
+  /* margin: -10px; */
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
 }
 
 .main-container {
   background-color: #200119;
   width: auto;
-  margin: 0px;
   padding: 0 5px;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
   z-index: 2;
@@ -204,6 +203,7 @@ body {
   border: 2px solid #c3c6ce43;
   transition: 0.5s ease-out;
   overflow: hidden;
+  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -460,6 +460,7 @@ body {
     padding: 1.8rem;
     border: 2px solid #c3c6ce43;
     transition: 0.5s ease-out;
+    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
     overflow: hidden;
     text-align: right;
     margin: 0 20px;
