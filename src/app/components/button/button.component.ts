@@ -9,10 +9,9 @@ import { Router } from '@angular/router';
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
-  constructor(private router: Router) {}
 
   navigate() {
-    // Cambia 'nueva-pagina' por la ruta a la que deseas redirigir
-    this.router.navigate(['register']);
+    window.location.href = 'http://ctem.ec:5173/';
   }
+  
 }
