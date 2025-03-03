@@ -14,14 +14,14 @@
 
 .square {
   width: 80%;
-  height: auto;
-  padding: 15px;
+  height: 70%;
+  padding: 25px;
   background-color: #7206596b;
   order: 2px solid #c3c6ce43;
   border-radius: 30px;
   border: 2px solid #c3c6ce43;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-  font-size: 15px;
+  font-size: 18px;
   color: #fff;
   line-height: 1.5;
   text-align: justify;
@@ -60,7 +60,33 @@
   margin-top: 10px;
   color: white;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-  padding-left: 10%;
+  padding-left: 7%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fadeInUp {
+  opacity: 0; 
+  animation: fadeInUp 1.5s ease-out forwards; 
+}
+
+
+.delay-1 {
+  animation-delay: 0.7s; 
+}
+
+.delay-2 {
+  animation-delay: 0.9s; 
 }
 
 .title-container {
@@ -73,7 +99,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 4%;
+  margin-top: 3%;
   font-style: italic;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
 }
@@ -101,8 +127,8 @@
 }
 
 .main-card {
-  width: 40vw;
-  height: 32vw;
+  width: 32vw;
+  height: 28vw;
   border-radius: 20px;
   background: #47023793;
   position: relative;
@@ -115,15 +141,23 @@
 }
 
 .main-card img {
-  width: 100%;
-  height: auto;
+  width: 60%;
+  height: 70%;
   border-radius: 15px;
 }
 
 .main-card p {
   color: white;
-  margin-top: 10px;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  text-align: left;
+  font-size: 17px;
+}
+
+.main-card h3 {
+  color: white;
+  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  text-align: left;
+  font-size: 20px;
 }
 
 .card {
@@ -132,14 +166,14 @@
   border-radius: 20px;
   background: #47023793;
   position: relative;
-  padding: 1.8rem;
+  padding: 1.9rem;
   border: 2px solid #c3c6ce43;
   overflow: hidden;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
+  margin: 15px;
 }
 
 .card img {
@@ -152,66 +186,13 @@
 .card-details {
   color: #fff;
   height: 100%;
-  gap: .5em;
   display: grid;
   place-content: center;
   text-align: center;
 }
 
 .text-title2 {
-  margin-bottom: 0.5rem;
-}
-
-.text-body {
-  color: #fefbfb;
-  margin-top: 0.5rem;
-}
-
-.card2 {
-  width: 20vw;
-  height: 25vw;
-  border-radius: 20px;
-  background: #47023793;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #c3c6ce43;
-  overflow: hidden;
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 20px;
-}
-
-.card2 img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  padding-left: 1%;
-}
-
-.card2-details {
-  color: #fff;
-  height: 100%;
-  gap: .5em;
-  display: grid;
-  place-content: center;
-  text-align: center;
-}
-
-.card2-button {
-  transform: translate(-50%, 125%);
-  width: 60%;
-  border-radius: 1rem;
-  border: none;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  opacity: 0;
-  transition: 0.3s ease-out;
-  cursor: pointer;
+  margin-bottom: 1%;
 }
 
 .text-body {
