@@ -43,9 +43,9 @@
 }
 
 .column1 img {
-  width: 45vw;
-  height: 35vw;
-  padding-left: 4%;
+  width: 40vw;
+  height: 30vw;
+  padding-left: 5%;
 }
 
 .column1 h3 {
@@ -160,6 +160,12 @@
   font-size: 20px;
 }
 
+.main-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.5s ease-out;
+}
+
 .card {
   width: 20vw;
   height: 27vw;
@@ -171,7 +177,7 @@
   overflow: hidden;
   font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   text-align: center;
   margin: 15px;
 }
@@ -205,6 +211,12 @@
   margin-left: 1%;
 }
 
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.5s ease-out;
+}
+
 .button2 {
   position: relative;
   margin-left: 45%;
@@ -220,7 +232,7 @@
 @media (max-width: 768px) {
   .container1 h1 {
       position: relative;
-      font-size: 25px;
+      font-size: 16px;
       margin-top: 125%;
     }
 
@@ -228,7 +240,9 @@
     width: 80%;
     height: auto;
     font-size: 12px;
-    margin-left: 23px; 
+    margin-left: 25px; 
+    padding: 13px;
+    text-align: left;
   }
   
   .row {
@@ -238,16 +252,17 @@
 
   .column1 {
     width: 100%;
-    text-align: center;
   }
 
   .column1 img {
+    position: relative;
     width: 80vw;
     height: 60vw;
+    margin-left: 25px;
   }
 
   .column1 h3 {
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 0;
     text-align: center;
   }
@@ -256,13 +271,16 @@
     position: relative;
     text-align: left;
     margin-left: 5px;
-    color: white;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    padding-left: 10%;
+    padding-left: 7%;
+    font-size: 14px;
+  }
+
+  .title-container {
+    font-size: 10px;
   }
 
   .title-container2 {
-    font-size: 14px;
+    font-size: 15px;
   }
   
   .main-ponetes {
@@ -271,21 +289,19 @@
   }
 
   .main-card {
-    width: 70vw;
-    height: 75vw;
+    width: 70%;
+    height: 75%;
     margin: 5px;
+  }
+
+  .main-card img {
+    width: 100%;
   }
   
   .card{
-    width: 70vw;
-    height: 120vw;
-    margin: 20 0px;
-  }
-
-  .card2{
-    width: 70vw;
-    height: 110vw;
-    margin: 20 0px;
+    width: 70%;
+    height: 0%;
+    margin-left: 25px;
   }
   
   .button2 {
