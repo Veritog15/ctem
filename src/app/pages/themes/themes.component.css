@@ -1,267 +1,307 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* Contenedor principal */
 .container {
-    background-color: #3D002F;
-    width: 100%;
-    min-height: 1000px; /* Ajusta según la altura mínima  */
-    padding: 0px;
-    margin: 0%;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-.image1 img {
-    width: 100%;
-    height: auto;
-    position: relative;
+  background-color: #3d002f;
+  width: 100%;
+  min-height: 1000px; 
+  padding: 0px;
+  margin: 0%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
-/* Contenedor para .thematicname y .thematicdes */
-.thematic-container {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 20px; 
-    max-width: 1200px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+.image1 img {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
-/* Estilo de texto temático */
+
+.thematic-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
 .thematicname {
-    color: #fff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    font-size: 31px;
-    margin: 0;
-    max-width: 48%; 
+  color: #fff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  font-size: 31px;
+  margin: 0;
+  max-width: 48%;
 }
 
 .thematicdes {
-    color: #fff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
- font-size: 14px;
-margin: 0;
-line-height: 30px;
-    max-width: 48%;
+  color: #fff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  font-size: 14px;
+  margin: 0;
+  line-height: 30px;
+  max-width: 48%;
 }
 
-/* Botón */
 .button2 {
+  margin: 40px auto;
+  text-align: center;
+  display: block;
+}
+
+.title1,
+.title2,
+.title3 {
+  width: 100%;
+  background-color: #250101d3;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.title1 h1,
+.title2 h1,
+.title3 h1 {
+  color: #fff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  font-size: 30px;
+  margin: 0;
+}
+
+.container-text,
+.container-text2,
+.container-text3 {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px; 
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: height 0.3s ease;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6 {
+  color: #000;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  margin: 0%;
+  text-align: left;
+  margin-right: 0px;
+}
+
+.text1 h1,
+.text2 h1,
+.text3 h1,
+.text4 h1,
+.text5 h1,
+.text6 h1 {
+  font-size: 22px;
+  margin: 40px 0 20px 0; 
+}
+
+.text1 p,
+.text2 p,
+.text3 p,
+.text4 p,
+.text5 p,
+.text6 p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.imageEducation img,
+.imageScience img,
+.imageDivulgation img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.button {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .thematicname {
+    font-size: 24px;
+    margin: 65px auto 0px;
+    max-width: 90%;
+  }
+
+  .thematicdes {
+    font-size: 16px;
+    margin: 0px auto 10px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button2 {
+    padding: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 24%;
+  }
+
+  .container-text,
+  .container-text2,
+  .container-text3 {
+    margin-left: 0%;
+  }
+
+  .text1 h1,
+  .text2 h1,
+  .text3 h1,
+  .text4 h1,
+  .text5 h1,
+  .text6 h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .text1 p,
+  .text2 p,
+  .text3 p,
+  .text4 p,
+  .text5 p,
+  .text6 p {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .imageEducation img,
+  .imageScience img,
+  .imageDivulgation img {
+    width: 105%;
+    margin: -2.5%;
+  }
+
+  .footer {
+    margin: 0%;
+    padding: 1.4%;
+  }
+}
+
+@media (min-width: 901px) {
+  .image1 {
+    position: relative;
+    z-index: 0;
+    max-height: 400px;
+  }
+
+  .thematic-container {
+    position: absolute;
+    top: 20px; 
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .thematicname,
+  .thematicdes {
+    position: absolute;
+    transform: translateX(-50%);
+    max-width: 48%;
+    margin: 0;
+  }
+
+  .thematicname {
+    top: 3%;
+    left: 50%;
+    font-size: 32px;
+  }
+
+  .thematicdes {
+    top: 9%;
+    left: 52%;
+    font-size: 18px;
+  }
+
+  .button2 {
+    position: absolute;
+    top: 11%;
+    left: 70%;
     margin: 40px auto;
     text-align: center;
     display: block;
-}
-
-/* Títulos */
-.title1, .title2, .title3 {
-    width: 100%;
-    background-color: #250101d3;
-    padding: 20px 0;
-    text-align: center;
-    z-index: 1;
-}
-.title1 h1, .title2 h1, .title3 h1 {
-    color: #fff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    font-size: 30px;
-    margin: 0;
-}
-
-/* Contenedor de texto */
-.container-text, .container-text2, .container-text3 {
-    width: 100%;
-    background-color: #fff;
-    padding: 0px; /* Reducido el padding vertical */
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transition: height 0.3s ease;
-}
-/* Estilos de los textos */
-.text1, .text2, .text3, .text4, .text5, .text6 {
-    color: #000;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin: 0%;
-    text-align: left;
-    margin-right: 0px;
-}
-
-.text1 h1, .text2 h1, .text3 h1, .text4 h1, .text5 h1, .text6 h1 {
-font-size: 22px;
-    margin: 40px 0 20px 0; /* Ajustado el margen vertical en píxeles */
-}
-
-.text1 p, .text2 p, .text3 p, .text4 p, .text5 p, .text6 p {
-    font-size: 14px;
-    line-height: 25px;
-}
-/* Imágenes adicionales */
-.imageEducation img, .imageScience img, .imageDivulgation img {
-    width: 100%;
+  }
+  
+  .container-text,
+  .container-text2,
+  .container-text3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
-}
+    z-index: 1;
+    padding: 0px; 
+  }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
-}
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5,
+  .text6,
+  .imageEducation,
+  .imageScience,
+  .imageDivulgation {
+    flex: 1;
+    max-width: 50%;
+    margin: 10px;
+  }
 
-/* Botón en el footer */
-.button {
-    margin-top: 20px;
-    text-align: center;
-    display: block;
-}
-
-/* Media Queries para Responsividad */
-/* Ajustes para pantallas móviles (no se tocan) */
-@media (max-width: 900px) {
-    .container {
-       margin: 0%;
-       padding: 0%;
-    }
-    
-    .image1 {
-        display: none; 
-    }
-
-
-    .thematicname {
-        font-size: 24px;
-        margin: 65px auto 0px;
-        max-width: 90%;
-    }
-
-    .thematicdes {
-        font-size: 16px;
-        margin: 0px auto 10px;
-        max-width: 90%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .button2 {
-        padding: 4%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-left: 24%;
-    }
-    
-
-    .container-text, .container-text2, .container-text3 {
-        margin-left: 0%;
-    }
-
-    
-
-    .text1 h1, .text2 h1, .text3 h1, .text4 h1, .text5 h1, .text6 h1 {
-        font-size: 20px;
-        text-align: center;
-        margin-left: 0%;
-        width: 100%;
-    }
-.text1 p, .text2 p, .text3 p, .text4 p, .text5 p, .text6 p {
-        font-size: 14px;
-        text-align: center;
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    .imageEducation img, .imageScience img, .imageDivulgation img {
-        width: 105%;
-        margin: -2.5%;
-    }
-
-    .footer{
-        margin: 0%;
-       padding: 1.4%;
-    }
-}
-
-/* Ajustes para pantallas de escritorio */
-@media (min-width: 901px) {
-    .image1 {
-        position: relative;
-        z-index: 0;
-        max-height: 400px;
-    }
-.thematic-container {
-        position: absolute;
-        top: 20px; /* Ajusta el valor según el espacio deseado desde el borde superior */
-        width: 100%;
-        max-width: 1200px; /* Ajusta según el ancho máximo deseado */
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-    }
-
-    .thematicname, .thematicdes {
-        position: absolute;
-        transform: translateX(-50%);
-        max-width: 48%;
-        margin: 0;
-    }
-.thematicname {
-        top: 3%;
-        left: 50%;
-        font-size: 32px;
-    }
-    
-    .thematicdes {
-        top: 9%;
-        left: 52%;
-        font-size: 18px;
-    }
-
-    .button2 {
-        position: absolute;
-        top: 11%;
-        left: 70%;
-        margin: 40px auto;
-        text-align: center;
-        display: block;
-    }
-/* Ajustes para las secciones de texto en pantallas grandes */
-    .container-text, .container-text2, .container-text3 {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: auto;
-        z-index: 1;
-        padding: 0px; /* Ajusta el padding horizontal en píxeles */
-    }
-
-    .text1, .text2, .text3, .text4, .text5, .text6,
-    .imageEducation, .imageScience, .imageDivulgation {
-        flex: 1; 
-        max-width: 50%;
-        margin: 10px;
-    }
- /* Ajustes específicos para imágenes dentro de los contenedores */
-.imageEducation img, .imageDivulgation img {
-        width: 100%; 
-        height: 370px; 
-        margin: -14px; 
+  .imageEducation img,
+  .imageDivulgation img {
+    width: 100%;
+    height: 370px;
+    margin: -14px;
     margin-top: -11px;
-    }
-    .imageScience img {
-        width: 100%; 
-height: 370px; 
-        margin: -14px; 
+  }
+  .imageScience img {
+    width: 100%;
+    height: 370px;
+    margin: -14px;
     margin-top: -11px;
     margin-left: 10px;
-    }
+  }
 }

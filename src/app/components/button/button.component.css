@@ -1,31 +1,30 @@
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .register-btn {
-    background-color: #ffffff;
-    color: #bf1650;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer; 
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    width: auto;
-    display: inline-block;
-    transition: all 0.5s ease; /* Transición suave para el hover */
+  background-color: #ffffff;
+  color: #bf1650;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  width: auto;
+  display: inline-block;
+  transition: all 0.5s ease; 
 }
 
 .register-btn:hover {
-    background-color: #000000; /* Fondo negro al pasar el cursor */
-    color: #ffffff; /* Texto blanco al pasar el cursor */
-    transform: scale(1.1); /* Aumenta el tamaño del botón */
+  background-color: #000000; 
+  color: #ffffff; 
+  transform: scale(1.1); 
 }
 
-
 .button-container {
-    position: absolute;
-    text-align: center;
-    z-index: 2; 
+  position: absolute;
+  text-align: center;
+  z-index: 2;
 }

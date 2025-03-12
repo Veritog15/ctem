@@ -1,7 +1,7 @@
-/* Estilos generales */
-body, html {
+body,
+html {
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
   overflow-x: hidden;
 }
@@ -11,7 +11,7 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .left-section {
@@ -37,8 +37,8 @@ body, html {
 .logoctm img {
   position: absolute;
   width: auto;
-  height: 40px; 
-  top: 160px; 
+  height: 40px;
+  top: 160px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -52,12 +52,12 @@ body, html {
   max-width: 500px;
   background-color: #64646448;
   padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
 .title {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   font-style: italic;
   color: #ffffff;
   text-align: center;
@@ -66,7 +66,7 @@ body, html {
 }
 
 .form-group {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   margin-bottom: 15px;
   color: white;
   font-size: 12px;
@@ -84,9 +84,9 @@ input {
 }
 
 .submit-button {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   padding: 5px 10px;
-  background-color: #24001C;
+  background-color: #24001c;
   color: white;
   border: none;
   border-radius: 10px;
@@ -102,14 +102,14 @@ input {
 }
 
 .error-message {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   color: #ff5757;
   font-size: 0.9em;
   margin-top: 5px;
 }
 
 .success-message {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   color: green;
   font-size: 1.2em;
   margin-top: 20px;
@@ -118,7 +118,7 @@ input {
 
 .right-section {
   position: absolute;
-  background-color: #24001C;
+  background-color: #24001c;
   width: 600px;
   height: 100%;
   color: #fff;
@@ -134,7 +134,7 @@ input {
 }
 
 .text-container {
-  font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   font-style: italic;
   text-align: center;
   max-width: 100%;
@@ -150,7 +150,6 @@ input {
   margin: 10px 0;
 }
 
-/* Media queries para ajustar la anchura de la right-section en escritorio */
 @media screen and (max-width: 1200px) {
   .right-section {
     width: 500px;
@@ -165,9 +164,6 @@ input {
   }
 }
 
-
-
-/* Estilos para pantallas móviles */
 @media screen and (max-width: 900px) {
   .registration-container {
     position: relative;
@@ -194,7 +190,8 @@ input {
     height: auto;
   }
 
-  .left-section, .right-section {
+  .left-section,
+  .right-section {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -208,7 +205,8 @@ input {
     margin-top: 20px;
   }
 
-  .big-text, .small-text {
+  .big-text,
+  .small-text {
     text-align: center;
     margin: 10px 0;
   }
@@ -221,7 +219,8 @@ input {
     font-size: 0.8em;
   }
 
-  body, html {
+  body,
+  html {
     height: auto;
     overflow-y: auto;
   }

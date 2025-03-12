@@ -1,39 +1,39 @@
 body {
-    margin: 0;
-    font-family: 'IBM Plex Sans', 'Roboto Slab' , 'Orienta';
-    background: transparent;
-    color: white;
+  margin: 0;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  background: transparent;
+  color: white;
 }
 
 .hero {
-    text-align: center;
-    padding: 80px 20px; 
+  text-align: center;
+  padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 2em;
-    margin-bottom: 25px;
-    margin-top: 40px; 
-    font-style: italic; 
+  font-size: 2em;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  font-style: italic;
 }
 
 .hero p {
-    font-size: 1.1em;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .line-break {
-    display: block;
+  display: block;
 }
 
 @media (max-width: 768px) {
-    .hero p {
-        font-size: 0.8em; 
-    }
+  .hero p {
+    font-size: 0.8em;
+  }
 
-    .hero h1 {
-        font-size: 1.5em; 
-    }
+  .hero h1 {
+    font-size: 1.5em;
+  }
 }

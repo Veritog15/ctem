@@ -1,247 +1,247 @@
 body {
-    margin: 0;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-  }
-  
-  /* .main {
-    background-color: #c76eb2;
-    width: 100%;
-    margin: -8px;
-    padding: 0 5px;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    z-index: 2;
-  } */
+  margin: 0;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+}
 
 .title {
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    color: #ffffff;
-    margin-bottom: 1px;
-    padding-top: 10px; 
-    text-align: center;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  color: #ffffff;
+  margin-bottom: 1px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .text-title {
-    color: #ffffff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    text-align: center;
-    padding: 70px 0px 0px 0px; 
-    margin-bottom: 10px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  text-align: center;
+  padding: 70px 0px 0px 0px;
+  margin-bottom: 10px;
+  font-style: italic;
 }
 
 .text-title img {
-    width: 50px;
-    height: auto;
+  position: relative;
+  width: 10%;
+  height: 10%;
 }
 
 .details-container {
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    color: #ffffff;
-    width: 590px;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 25px;
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-bottom: 10px; /* Aumenta el espacio entre los elementos */
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  color: #ffffff;
+  width: 590px;
+  height: auto;
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff4d;
+  padding: 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 5px #0000001a;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
-.details-container span {
-    font-weight: 400;
-    font-size: 18px;
-    /* margin-bottom: 20px;  */
 
+.details-container span {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .detail-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .detail-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
-.thirdContainer, .button, .objective, .principles-information, .mission-vision {
-    margin: 0px 0;
+.thirdContainer,
+.button,
+.objective,
+.principles-information,
+.mission-vision {
+  margin: 0px 0;
 }
 
-.mission-vision, .principles-information {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
+.mission-vision,
+.principles-information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
 
 .carousel {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container-mission {
-    width: 50%;
-    background-color: #200119;
-    padding-bottom: 28px;
+  width: 50%;
+  background-color: #200119;
 }
 
 .container-mission p {
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    padding: 10%;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin: 0;
-    line-height: 2;
-    font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 10%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
 }
 
 .container-mission h1 {
-    padding-top: 28px;
-    color: #ffffff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin-bottom: 15px;
+  padding-top: 28px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  margin-top: 50px;
 }
 
 .container-vision {
-    width: 50%;
-    background-color: #ffffff;
+  position: relative;
+  height: auto;
+  width: 50%;
+  background-color: #ffffff;
 }
 
 .container-vision p {
-    align-items: center;
-    justify-content: center;
-    color: #200119;
-    padding: 10%;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin: 0;
-    line-height: 2;
-    font-size: 14px;
-    font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  color: #200119;
+  box-sizing: border-box;
+  padding: 10%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .container-vision h1 {
-    padding-top: 28px;
-    color: #200119;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin-bottom: 15px;
+  padding-top: 28px;
+  color: #200119;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  margin-top: 50px;
 }
 
 .information {
-    width: 50%;
-    background-color: #ffffff;
+  height: 10%;
+  width: 50%;
 }
 
 .information img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 70%;
 }
 
 .principles {
-    width: 48%;
-    background-color: #200119;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
+  width: 48%;
+  background-color: #200119;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
 }
 
 .principles p {
-    color: #ffffff;
-    padding: 4%;
-
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin: 0;
-    line-height: 2;
-    font-size: 14px;
-
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
 }
 
 .principles h1 {
-    color: #ffffff;
-    padding: 2%;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    margin-bottom: 10px;
-
+  color: #ffffff;
+  padding: 2%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
 }
 
-.text-objective p {
-    margin-bottom: 10px;
-    line-height: 2;
-    font-size: 14px;
-
+.text-objective {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    margin-left: -145px;
-    padding: 40px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  margin-left: -145px;
+  padding: 10px 0 70px 0;
+  margin-top: 10px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 30px;
-
+  text-align: center;
+  font-size: 30px;
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
-    .mission-vision, .principles-information {
-        flex-direction: column;
-    }
+  .mission-vision,
+  .principles-information {
+    flex-direction: column;
+  }
 
-    .container-mission, .container-vision, .information, .principles {
-        width: 100%;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
+  .container-mission,
+  .container-vision,
+  .information,
+  .principles {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 
-    .principles p{
-        padding: 10%;
+  .principles p {
+    padding: 10%;
+  }
 
-    }
+  .information {
+    background-color: #200119;
+  }
 
-    .information{
-        background-color: #200119;
-    }
+  .details-container {
+    width: 80%;
+    padding: 20px 10px;
+    margin-top: -40px;
+  }
 
-    .details-container {
-        width: 80%;
-        padding: 20px 10px; /* Ajusta el padding para pantallas pequeñas */
-        margin-top: -40px;
-    }
+  .text-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 5%;
+  }
 
-    .text-title {
-        padding: 60px 10px 0px 0px; /* Baja el contenido en pantallas pequeñas */
-        margin-bottom: 50px;
-        padding: 10%;
+  .text-title img {
+    margin-top: 50px;
+    width: 40%;
+  }
 
-        font-size: 18px; /* Disminuye el tamaño de la fuente en pantallas pequeñas */
-
-    }
-
-    .text-title img {
-        width: 40px; /* Disminuye el tamaño de la imagen en pantallas pequeñas */
-    }
-
-    .background-container {
-        padding-top: 60px;
-        background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el contenedor */
-        background-position: center; /* Centra la imagen en el contenedor */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-    }
+  .background-container {
+    padding-top: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

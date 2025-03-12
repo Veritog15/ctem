@@ -1,137 +1,135 @@
 .container {
-    background-color: #000000;
-    width: 100%;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-section {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    color: #fff;
-    font-family: 'IBM Plex Sans', 'Roboto Slab', 'Orienta';
-    font-size: 15px;
-    margin-bottom: 30px;
-    flex-wrap: wrap; /* Permite que las columnas se ajusten en múltiples líneas si es necesario */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  color: #fff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  font-size: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; 
 }
 
 .column {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho */
-    padding: 0 10px; /* Añade un pequeño padding lateral */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+  padding: 0 10px;
 }
 
 .column h1 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
 .column p {
-    margin: 8px 0;
-    color: #fff;
+  margin: 8px 0;
+  color: #fff;
 }
 
 .icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 .icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
 }
 
 .logo-section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .logo-section img {
-    max-width: 150px;
-    height: auto;
+  max-width: 150px;
+  height: auto;
 }
 
 .logo-suda {
-    padding: 15%;
+  padding: 15%;
 }
 
 .logo-ctem img {
-    max-width: 150px;
-    height: auto;
+  max-width: 150px;
+  height: auto;
 }
 
 .autor {
-    margin-top: 30px;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
 }
 
 .icons a svg {
-    stroke: #ffffff; /* Color blanco por defecto */
-    fill: #ffffff00; /* Para los iconos que usan fill */
-    transition: stroke 0.3s ease, fill 0.3s ease; /* Transición suave para el cambio de color */
+  stroke: #ffffff; 
+  fill: #ffffff00; 
+  transition: stroke 0.3s ease, fill 0.3s ease; 
 }
 
 .icons a:hover svg {
-    stroke: #800080; /* Color morado al hacer hover */
-    fill: #80008000; /* Cambiar a morado al hacer hover para los iconos que usan fill */
+  stroke: #800080; 
+  fill: #80008000; 
 }
 
 .icons a:nth-child(4) svg {
-    fill: #ffffff; /* Fill blanco solo para el cuarto ícono */
+  fill: #ffffff; 
 }
 
 .icons a:nth-child(4):hover svg {
-    fill: #800080; /* Fill morado solo para el cuarto ícono cuando se hace hover */
+  fill: #800080; 
 }
 
-
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-    .footer-section {
-        flex-direction: column;
-        align-items: center;
-        width: 100%; /* Asegura que la sección ocupe todo el ancho de la pantalla */
-    }
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+  }
 
-    .column {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 0 15px; /* Añade más padding lateral para darle espacio */
-    }
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
 
-    .icons {
-        justify-content: center; /* Centra los íconos en pantallas pequeñas */
-        gap: 20px;
-    }
+  .icons {
+    justify-content: center; 
+    gap: 20px;
+  }
 
-    .logo-section img, .logo-ctem img {
-        max-width: 120px; /* Ajusta el tamaño del logo para pantallas pequeñas */
-    }
+  .logo-section img,
+  .logo-ctem img {
+    max-width: 120px; 
+  }
 }
 
-/* Ajustes para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
-    .column h1 {
-        font-size: 18px; /* Reduce el tamaño del título para pantallas muy pequeñas */
-    }
+  .column h1 {
+    font-size: 18px; 
+  }
 
-    .column p {
-        font-size: 14px; /* Reduce el tamaño del texto para pantallas muy pequeñas */
-    }
+  .column p {
+    font-size: 14px; 
+  }
 
-    .icons img {
-        width: 20px; /* Reduce el tamaño de los íconos para pantallas muy pequeñas */
-        height: 20px;
-    }
+  .icons img {
+    width: 20px; 
+    height: 20px;
+  }
 }

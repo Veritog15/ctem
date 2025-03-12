@@ -1,17 +1,14 @@
 <header>
-  <!-- <div class="logo">
-    <img src="assets/logoCtem.png" alt="Logo">
-  </div> -->
   <div class="logo">
     <a routerLink="home">
-      <img src="assets/logoCtem.png" alt="Logo">
+      <img src="assets/logoCtem.png" alt="Logo" />
     </a>
   </div>
   <div class="menu-icon" (click)="openMenu()">
     <i [class]="menu_icon"></i>
   </div>
-  
-  <nav class="desktop_menu" [ngClass]="{'mobile_menu': menuValue}">
+
+  <nav class="desktop_menu" [ngClass]="{ mobile_menu: menuValue }">
     <ul>
       <li (click)="closeMenu()">
         <div routerLink="home">Inicio</div>
@@ -22,9 +19,6 @@
       <li (click)="closeMenu()">
         <div routerLink="themes">Temáticas</div>
       </li>
-      <!-- <li (click)="closeMenu()">
-        <div routerLink="themes">Ponentes</div>
-      </li> -->
       <li (click)="closeMenu()">
         <div routerLink="register">
           <button class="button">Inscribirse</button>
