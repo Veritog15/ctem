@@ -39,6 +39,7 @@
 
 .column p:hover {
   color: #800080; 
+  cursor: pointer;
 }
 
 .icons {
