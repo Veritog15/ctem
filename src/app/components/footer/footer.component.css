@@ -37,6 +37,10 @@
   color: #fff;
 }
 
+.column p:hover {
+  color: #800080; 
+}
+
 .icons {
   display: flex;
   justify-content: space-around;
