@@ -1,0 +1,82 @@
+<div class="main pt-32"> <!-- Increased from pt-24 to pt-32 for header space -->
+<div
+  class="background-container text-center text-white py-10 mt-24"
+  style="background-image: url('assets/Background2.png'); background-size: cover; background-position: center;"
+>
+    <div class="title animate__animated animate__fadeInDown">
+      <img src="assets/logoANI.svg" alt="Logo" class="mx-auto w-20" />
+      <h1 class="text-3xl font-bold mt-4">
+        ANI aplicación de debates y generación de <br />
+        grafos de conocimiento
+      </h1>
+    </div>
+
+    <div class="details-container grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-6 mx-auto">
+      <div class="detail-item card">
+        <img src="assets/software.svg" class="icon" />
+        <span>Carrera de desarrollo de Software</span>
+      </div>
+      <div class="detail-item card">
+        <img src="assets/place.svg" class="icon" />
+        <span>Instituto Tecnológico Superior Sudamericano</span>
+      </div>
+      <div class="detail-item card">
+        <img src="assets/map.svg" class="icon" />
+        <span>Cuenca</span>
+      </div>
+      <div class="detail-item card">
+        <img src="assets/cell.svg" class="icon" />
+        <span>App Debates</span>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center my-6">
+      <app-button></app-button>
+    </div>
+</div>
+
+<div class="mission-vision bg-gray-100 p-6 text-center relative overflow-hidden">
+  <div class="carousel-container w-full overflow-hidden relative">
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+      <!-- Slide 1 -->
+      <div class="slide w-full flex-shrink-0">
+        <img src="assets/debate-educacion.jpg" alt="Debates en Educación" class="w-full h-80 object-cover rounded" />
+        <p class="mt-2 text-xl text-white">Debates en Educación</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide w-full flex-shrink-0">
+        <img src="assets/bookthematic.webp" alt="Temáticas de Conocimiento" class="w-full h-80 object-cover rounded" />
+        <p class="mt-2 text-xl text-white">Temáticas de Conocimiento</p>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide w-full flex-shrink-0">
+        <img src="assets/ctem.png" alt="Proyectos CTEM" class="w-full h-80 object-cover rounded" />
+        <p class="mt-2 text-xl text-white">Proyectos CTEM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="principles-information grid grid-cols-1 md:grid-cols-2 gap-8 p-6 bg-white">
+    <div class="information text-center animate__animated animate__fadeInLeft">
+      <img src="assets/ANI.png" class="mx-auto w-3/4" />
+    </div>
+    <div class="principles animate__animated animate__fadeInRight bg-[#200119] rounded-lg shadow-md p-6 text-white">
+      <h1 class="text-2xl font-bold mb-4">Enfoque Educativo</h1>
+      <p>
+        ANI está diseñada para fomentar el pensamiento crítico...
+      </p>
+      <h2 class="text-xl font-semibold mt-6">Metodología de Uso</h2>
+      <p>
+        Los docentes crean debates, configuran salas, asignan estudiantes...
+      </p>
+      <div class="flex justify-center items-center my-6">
+        <app-button></app-button>
+      </div>
+    </div>
+</div>
+
+<div class="footer mt-10">
+    <app-footer></app-footer>
+</div>
+</div>

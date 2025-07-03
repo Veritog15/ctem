@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+}
+
+.title {
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  color: #ffffff;
+  margin-bottom: 1px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.text-title {
+  color: #ffffff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  text-align: center;
+  padding: 70px 0px 0px 0px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.text-title img {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+.details-container {
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  color: #ffffff;
+  width: 590px;
+  height: auto;
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff4d;
+  padding: 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 5px #0000001a;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.details-container span {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.thirdContainer,
+.button,
+.objective,
+.principles-information,
+.mission-vision {
+  margin: 0px 0;
+}
+
+.mission-vision,
+.principles-information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel {
+  display: flex;
+  width: 300%; /* 100% for each of the 3 slides */
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+  width: 33.33%; /* Each slide takes exactly 1/3 of the carousel width */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 320px; /* Increased from 256px to 320px for larger images */
+  object-fit: cover; /* Keep cover to fill the area, or use contain to avoid cropping */
+  border-radius: 8px;
+}
+
+.carousel-container p {
+  color: #ffffff; /* White text */
+  font-size: 1.25rem; /* Increased from text-lg (18px) to text-xl (20px) */
+  margin-top: 8px;
+}
+
+.container-mission {
+  width: 50%;
+  background-color: #200119;
+}
+
+.container-mission p {
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 10%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
+}
+
+.container-mission h1 {
+  padding-top: 28px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  margin-top: 50px;
+}
+
+.container-vision {
+  position: relative;
+  height: auto;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.container-vision p {
+  align-items: center;
+  justify-content: center;
+  color: #200119;
+  box-sizing: border-box;
+  padding: 10%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.container-vision h1 {
+  padding-top: 28px;
+  color: #200119;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  margin-top: 50px;
+}
+
+.information {
+  height: 10%;
+  width: 50%;
+}
+
+.information img {
+  width: 100%;
+  height: 70%;
+}
+
+.principles {
+  width: 48%;
+  background-color: #200119;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.principles p {
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+  line-height: 2;
+  font-size: 14px;
+}
+
+.principles h1 {
+  color: #ffffff;
+  padding: 2%;
+  font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
+}
+
+.text-objective {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added for vertical centering */
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .mission-vision,
+  .principles-information {
+    flex-direction: column;
+  }
+
+  .container-mission,
+  .container-vision,
+  .information,
+  .principles {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .principles p {
+    padding: 10%;
+  }
+
+  .information {
+    background-color: #200119;
+  }
+
+  .details-container {
+    width: 80%;
+    padding: 20px 10px;
+    margin-top: -40px;
+  }
+
+  .text-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 5%;
+  }
+
+  .text-title img {
+    margin-top: 50px;
+    width: 40%;
+  }
+
+  .background-container {
+    padding-top: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-container img {
+    height: 240px; /* Smaller height for mobile */
+  }
+
+  .carousel-container p {
+    font-size: 1.125rem; /* Slightly smaller text for mobile */
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
