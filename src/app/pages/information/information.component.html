@@ -61,15 +61,30 @@
   </div>
   <div class="enfoque-content" style="flex: 2; text-align: left;">
     <h1 class="text-2xl font-bold mb-4" style="color: #4b2996;">Enfoque Educativo</h1>
-    <p style="color: #2d176c; font-size: 1.1em;">ANI está diseñada para fomentar el pensamiento crítico...</p>
-    <h2 class="text-xl font-semibold mt-6" style="color: #4b2996;">Metodología de Uso</h2>
-    <p style="color: #2d176c; font-size: 1.1em;">Los docentes crean debates, configuran salas, asignan estudiantes...</p>
+    <p style="color: #2d176c; font-size: 1.1em;">ANI es una plataforma educativa diseñada para fomentar debates entre estudiantes a través de una aplicación móvil. Los docentes pueden gestionar la dinámica del debate desde la versión web, donde tienen control sobre los usuarios, las salas de discusión y los temas a tratar.</p>
+    <h2 class="text-xl font-semibold mt-4" style="color: #4b2996;">Metodología de Uso</h2>
+    <p style="color: #2d176c; font-size: 1.1em;">Durante el debate, los estudiantes participan grabando sus intervenciones en audio. Una vez finalizadas las grabaciones, la aplicación las procesa automáticamente, convirtiéndolas en texto y generando grafos de conocimiento mediante las API de OpenAI. Estos grafos permiten visualizar las interacciones y el desarrollo del debate, proporcionando una herramienta valiosa para el análisis y la evaluación del aprendizaje.</p>
     <div style="display: flex; justify-content: flex-start; margin-top: 24px;">
       <app-button></app-button>
     </div>
   </div>
 </div>
 
+<div class="diagrama-box animate-diagrama" style="max-width: 900px; margin: 48px auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; flex-direction: row; align-items: center; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);">
+  <img src="assets/diagrama.png" alt="Diagrama" style="max-width: 320px; width: 100%; border-radius: 12px; margin-right: 32px;" />
+  <div style="flex: 1; color: #4b2996; display: flex; flex-direction: column;">
+    <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 18px; color: #4b2996;">Diagrama</h2>
+    <div style="font-size: 1.08em;">
+      La implementación del debate como herramienta de aprendizaje activa responde a la necesidad de transitar desde un enfoque tradicional hacia un paradigma centrado en el estudiante. Esta estrategia didáctica promueve la construcción del conocimiento a través de la argumentación, el análisis crítico y la interacción entre los participantes. En este caso, se emplea la aplicación ANI como instrumento para la realización de los debates, permitiendo una experiencia interactiva y digitalizada.
+    </div>
+  </div>
+</div>
+<style>
+  .animate-diagrama:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px rgba(80, 60, 160, 0.18);
+  }
+</style>
 <div class="footer mt-10">
     <app-footer></app-footer>
 </div>
