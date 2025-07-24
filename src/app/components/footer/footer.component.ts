@@ -20,7 +20,7 @@ constructor(private router: Router) {}
   }
 
   navigate3() {
-    this.router.navigate(['register']);
+    this.router.navigate(['manual']);
   }
 
   navigate4() {

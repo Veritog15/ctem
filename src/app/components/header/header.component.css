@@ -6,7 +6,8 @@
 
 header {
   font-family: "IBM Plex Sans", sans-serif;
-  background: #200119;
+  background: linear-gradient(90deg, #e0e7ff 0%, #af9ef7 100%) !important;
+  color: #2d176c !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +29,7 @@ header {
   margin-left: 18px;
   max-width: 100px;
   height: auto;
+  filter: none;
 }
 
 .desktop_menu {
@@ -44,7 +46,7 @@ header {
 }
 
 .desktop_menu ul li {
-  color: white;
+  color: #2d176c;
   font-size: 16px;
   margin-left: 26px;
   cursor: pointer;
@@ -92,11 +94,11 @@ header {
 
 .button {
   padding: 5px;
-  background-color: #200119;
+  background-color: #e0e7ff;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
-  color: #ffffff;
+  color: #2d176c;
   transition: all 200ms ease-in-out;
   font-size: 16px;
   position: relative;
@@ -104,10 +106,9 @@ header {
 }
 
 .button:hover {
-  color: #200119;
-  transform: scale(1.05);
-  outline: none;
-  box-shadow: 0 8px 25px #200119;
+  color: #fff;
+  background-color: #af9ef7;
+  box-shadow: 0 8px 25px #af9ef7;
 }
 
 .button::before {

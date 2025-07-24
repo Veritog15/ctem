@@ -1,157 +1,155 @@
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet"
-  />
-  <script src="app-text.js" defer></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orienta&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-</head>
-
-<div class="firts">
-  <app-carousel></app-carousel>
+<div class="initial-section" style="padding: 40px 20px; position: relative; overflow: hidden; min-height: 400px; background: linear-gradient(135deg, #af9ef7 0%, #e0e7ff 100%);">
+  <div class="title-button-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; max-width: 800px; margin: 0 auto; position: relative; z-index: 10; padding-top: 100px;">
+    <div class="animated-title" style="text-align: center; font-family: 'Arial', sans-serif;">
+      <h1 class="animated-main-title" [class.ng-animating]="animatingTitle">{{ currentTitle }}</h1>
+    </div>
+    <div class="button2-wrapper">
+      <div class="button2-center">
+        <app-button style="background-color: #fff; color: #a0007e; font-weight: bold; padding: 15px 30px; border: none; border-radius: 30px; cursor: pointer; font-size: 1.2em; box-shadow: none;">Prueba ANI</app-button>
+      </div>
+    </div>
+  </div>
+  <div class="info-cards-row" style="display: flex; justify-content: center; gap: 32px; margin-top: 60px; flex-wrap: wrap;">
+    <div class="info-card">
+      <img src="assets/debate-educacion.jpg" alt="Debate Educativo" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px 10px 0 0; margin-bottom: 12px;" />
+      <h3>Debate Educativo</h3>
+      <p>Participa en debates estructurados y analiza la participación estudiantil para potenciar el aprendizaje.</p>
+    </div>
+    <div class="info-card">
+      <img src="assets/grafos.png" alt="Grafos de Conocimiento" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px 10px 0 0; margin-bottom: 12px;" />
+      <h3>Grafos de Conocimiento</h3>
+      <p>Convierte debates académicos en grafos visuales para esquematizar el conocimiento matemático.</p>
+    </div>
+    <div class="info-card ai-card">
+      <div class="ai-card-flex">
+        <img src="assets/microthematic2.png" alt="Inteligencia Artificial" class="ai-card-img" />
+        <div class="ai-card-content">
+          <h3>Inteligencia Artificial</h3>
+          <p>Utiliza IA para analizar y registrar la información clave de cada debate en la plataforma.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container1">
-  <h1>Bienvenidos a ANI: Innovación en el Aprendizaje</h1>
-</div>
-
-<div class="square">
+<div class="ani-info-box">
   <p>
-    ANI es una plataforma web y móvil diseñada para potenciar el aprendizaje a
-    través de debates estructurados y el análisis de la participación
-    estudiantil. Esta herramienta es el resultado de una investigación
-    multidisciplinaria que busca transformar la manera en que docentes y
-    estudiantes interactúan en el aula.
+    ANI es una plataforma web y móvil diseñada para potenciar el aprendizaje a través de debates estructurados y el análisis de la participación estudiantil. Esta herramienta es el resultado de una investigación multidisciplinaria que busca transformar la manera en que docentes y estudiantes interactúan en el aula.
   </p>
 </div>
 
-<div class="row">
-  <div class="column1 fadeInUp delay-1">
-    <img src="assets/research.svg" alt="Imagen 1" />
-    <h3>Nuestro Equipo de Investigación</h3>
-    <p>
-      Detrás de ANI hay un grupo de investigadores apasionados por la educación
-      y la tecnología. Nuestro equipo está conformado por expertos en
-      metodologías de aprendizaje, análisis de datos y tecnologías emergentes,
-      quienes han trabajado arduamente en el diseño y validación de esta
-      innovadora herramienta.
-    </p>
-  </div>
-  <div class="column1 fadeInUp delay-2">
-    <img src="assets/development.svg" alt="Imagen 2" />
-    <h3>Nuestro Equipo de Desarrollo</h3>
-    <p>
-      Para materializar esta visión, contamos con un equipo de desarrolladores
-      altamente calificados en el diseño y construcción de soluciones
-      tecnológicas. Ellos han implementado una plataforma intuitiva y eficiente
-      que permite a docentes y estudiantes interactuar de manera dinámica,
-      asegurando una experiencia de usuario fluida y enriquecedora.
-    </p>
+<div class="section" style="padding: 40px 20px;">
+  <div class="bulma-box bulma-shadow" style="max-width: 900px; margin: 0 auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px;">
+    <div class="title-container" style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="color: #4b2996; font-size: 2em; text-align: center; font-family: 'Arial', sans-serif;">Inteligencia Artificial y Conectivismo para Esquematizar Conocimiento Matemático</h2>
+    </div>
+    <div class="section2" style="max-width: 800px; margin: 40px auto;">
+      <div class="title-container" style="margin-bottom: 20px;">
+        <h2 style="color: #4b2996; font-size: 1.8em; text-align: center; font-family: 'Arial', sans-serif;">Objetivos</h2>
+      </div>
+      <div class="objetivos-carousel" style="display: flex; justify-content: center; align-items: center;">
+        <button class="button is-light is-medium objetivos-arrow" (click)="prevObjetivo()" style="margin-right: 16px;">&#8592;</button>
+        <div class="objetivo-card" *ngIf="currentObjetivoIndex === 0" [@objetivoFade] style="width: 500px; height: 400px; background: #f8f8ff; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10);">
+          <img src="assets/objetive1.png" alt="Objetivo 1" style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px 10px 0 0;" />
+          <h3 style="color: #4b2996; font-size: 1.5em; margin: 10px 0;">Objetivos</h3>
+          <p style="color: #2d176c; font-size: 1em;">Determinar los fundamentos tecnológicos y conectivistas en la educación matemática.</p>
+        </div>
+        <div class="objetivo-card" *ngIf="currentObjetivoIndex === 1" [@objetivoFade] style="width: 500px; height: 400px; background: #f8f8ff; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10);">
+          <img src="assets/objetive2.jpeg" alt="Objetivo 2" style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px 10px 0 0;" />
+          <h3 style="color: #4b2996; font-size: 1.5em; margin: 10px 0;">Objetivos</h3>
+          <p style="color: #2d176c; font-size: 1em;">Desarrollar aplicación de código abierto con inteligencia artificial para registrar debates académicos en formato de audio y convertir en grafos de conocimiento.</p>
+        </div>
+        <button class="button is-light is-medium objetivos-arrow" (click)="nextObjetivo()" style="margin-left: 16px;">&#8594;</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="section">
-  <div class="title-container">
-    <h2>
-      Inteligencia Artificial y Conectivismo para Esquematizar Conocimiento
-      Matemático
-    </h2>
-  </div>
-
-  <div class="section2">
-    <div class="title-container">
-      <h2>Proyecto de investigación</h2>
+<div class="section" style="padding: 40px 20px;">
+  <div class="bulma-box bulma-shadow" style="max-width: 1100px; margin: 0 auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px;">
+    <div class="title-container2" style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="color: #4b2996; font-size: 2em; text-align: center; font-family: 'Arial', sans-serif;">Producción</h2>
     </div>
-
-    <div class="row main-ponetes">
-      <div class="main-card">
-        <img src="assets/objetive1.png" alt="Imagen 3" />
-        <h3>Objetivo Principal</h3>
-        <p>
-          Determinar los fundamentos tecnológicos y conectivistas en la
-          educación matemática.
-        </p>
+    <div class="produccion-cards-row">
+      <div class="produccion-card">
+        <img src="assets/article.png" alt="Imagen 5" class="produccion-img" />
+        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">Artículo Repensando la Educación Matemática:</p>
+        <p class="text-body" style="color: #2d176c; font-size: 1em;">Lecturas y críticas epistemológicas a los aportes del Conectivismo como modelo educativo.</p>
       </div>
-      <br />
-      <div class="main-card">
-        <img src="assets/objetive2.jpeg" alt="Imagen 4" />
-        <h3>Objetivo Principal</h3>
-        <p>
-          Desarrollar aplicación de código abierto con inteligencia artificial
-          para registrar debates académicos en formato de audio y convertir en
-          grafos de conocimiento.
-        </p>
+      <div class="produccion-card">
+        <img src="assets/ctem.png" alt="Imagen 6" class="produccion-img" />
+        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">CTEM: Sistema de generación de grafos para el aprendizaje matemático.</p>
+        <p class="text-body" style="color: #2d176c; font-size: 1em;">Sistema de generación de grafos para el aprendizaje matemático.</p>
+      </div>
+      <div class="produccion-card">
+        <img src="assets/article.svg" alt="Imagen 7" class="produccion-img" />
+        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">Manual para docentes de matemáticas sobre el uso pedagógico de los grafos de conocimiento.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="section">
-    <div class="title-container2">
-      <h2>Producción</h2>
+<div class="container" style="background: linear-gradient(90deg, #e0e7ff 0%, #af9ef7 100%); padding: 40px 20px;">
+  <div class="footer-section" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="column" style="flex: 1; min-width: 200px; margin: 10px;">
+      <h1 style="font-size: 1.5em;">Páginas</h1>
+      <p style="font-size: 1em; cursor: pointer;" (click)="navigate1()">Inicio</p>
+      <p style="font-size: 1em; cursor: pointer;" (click)="navigate2()">Información</p>
+      <h1 style="font-size: 1.5em;">Contactos</h1>
+      <p style="font-size: 1em;">cteminfo&#64;gmail.com</p>
     </div>
-    <div class="row three-columns">
-      <div class="column">
-        <div class="card">
-          <img src="assets/article.png" alt="Imagen 5" />
-          <div class="card-details">
-            <p class="text-title2">
-              Artículo Repensando la Educación Matemática:
-            </p>
-            <p class="text-body">
-              Lecturas y críticas epistemológicas a los aportes del Conectivismo
-              como modelo educativo.
-            </p>
-          </div>
-        </div>
+    <div class="column" style="flex: 1; min-width: 200px; margin: 10px;">
+      <h1 style="font-size: 1.5em;">Aplicación</h1>
+      <p style="font-size: 1em; cursor: pointer;" (click)="navigate5()">Aplicación Móvil</p>
+      <p style="font-size: 1em; cursor: pointer;" (click)="navigate6()">Aplicación Web</p>
+      <p style="font-size: 1em; cursor: pointer;" (click)="navigate7()">Metodología de Uso</p>
+    </div>
+    <div class="column" style="flex: 1; min-width: 200px; margin: 10px; text-align: center;">
+      <div class="logo-ctem" style="margin-bottom: 20px;">
+        <img src="assets/logoCtem.png" alt="Logo Principal" style="max-width: 100px;" />
       </div>
-      <div class="column">
-        <div class="card">
-          <img src="assets/ctem.png" alt="Imagen 6" />
-          <div class="card-details">
-            <p class="text-title2">
-              CTEM: Sistema de generación de grafos para el aprendizaje
-              matemático.
-            </p>
-            <p class="text-body">
-              Sistema de generación de grafos para el aprendizaje matemático.
-            </p>
-          </div>
-        </div>
+      <div class="logo-suda" style="margin-bottom: 20px;">
+        <img src="assets/Logo Suda.svg" alt="Logo Suda" style="max-width: 100px;" />
       </div>
-      <div class="column">
-        <div class="card">
-          <img src="assets/article.svg" alt="Imagen 7" />
-          <div class="card-details">
-            <p class="text-title2">
-              Manual para docentes de matemáticas sobre el uso pedagógico de los
-              grafos de conocimiento.
-            </p>
-          </div>
-        </div>
+      <div class="icons" style="display: flex; justify-content: center; gap: 10px;">
+        <a href="https://www.facebook.com/profile.php?id=61564491620602&mibextid=LQQJ4d" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d176c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/ctem.ec?igsh=MW9ocDQ5aG01aWFvaQ==" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d176c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M16.5 7.5l0 .01" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@ctemcongreso" target="_blank">
+          <svg fill="#2d176c" width="26px" height="26px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#2d176c">
+            <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ctem-congreso-238615322/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d176c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+            <path d="M8 11l0 5" />
+            <path d="M8 8l0 .01" />
+            <path d="M12 16l0 -5" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="button2">
-    <app-button></app-button>
+  <div class="logo-section" style="text-align: center; margin-top: 40px;">
+    <img src="assets/logo.png" alt="Logo Principal" style="max-width: 150px;" />
   </div>
 
-  <div class="footer">
-    <app-footer></app-footer>
+  <div class="autor" style="text-align: center; margin-top: 20px;">
+    <p style="font-size: 0.9em; font-family: 'Arial', sans-serif;">2024.©Instituto Superior Tecnológico Sudamericano-Cuenca. All rights reserved</p>
   </div>
 </div>

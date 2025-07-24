@@ -15,18 +15,19 @@ const routes: Routes = [
         (m) => m.InformationComponent
       ),
   },
+    {
+    path: 'manual',
+    loadComponent: () =>
+      import('./pages/manual/manual.component').then(
+        (m) => m.ManualComponent
+      ),
+  },
   {
     path: 'themes',
     loadComponent: () =>
       import('./pages/themes/themes.component').then((m) => m.ThemesComponent),
   },
-  {
-    path: 'register',
-    loadComponent: () =>
-      import('./pages/register/register.component').then(
-        (m) => m.RegisterComponent
-      ),
-  },
+
 ];
 
 @NgModule({

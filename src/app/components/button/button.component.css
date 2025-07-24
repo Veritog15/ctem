@@ -3,8 +3,8 @@
 }
 
 .register-btn {
-  background-color: #ffffff;
-  color: #bf1650;
+  background-color: #af9ef7;
+  color: #2d176c;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -18,8 +18,8 @@
 }
 
 .register-btn:hover {
-  background-color: #000000; 
-  color: #ffffff; 
+  background-color: #b39ddb;
+  color: #fff;
   transform: scale(1.1); 
 }
 

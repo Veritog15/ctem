@@ -87,7 +87,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "public/assets/lib/turn.min.js"
+            ]
           }
         }
       }
