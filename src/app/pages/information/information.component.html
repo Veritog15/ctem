@@ -1,31 +1,31 @@
-<div class="main" style="min-height: 100vh; background: linear-gradient(135deg, #af9ef7 0%, #7ecbff 100%); padding-top: 100px;">
+<div class="main" style="min-height: 100vh; background: #0f0330; padding-top: 100px;">
 <div
   class="background-container text-center text-white py-10 mt-24"
   style="background: none; box-shadow: none;"
 >
-    <div class="title animate__animated animate__fadeInDown">
-      <img src="assets/logoANI.svg" alt="Logo" class="mx-auto w-20" />
-      <h1 class="text-3xl font-bold mt-4">
-        ANI aplicación de debates y generación de <br />
-        grafos de conocimiento
+    <div class="title animate__animated animate__fadeInDown" style="text-align: center; margin-bottom: 40px;">
+      <img src="assets/logoANI.svg" alt="Logo" style="width: 120px; height: auto; margin: 0 auto 20px auto; display: block;" />
+      <h1 style="color: #fff; font-size: 1.5em; font-weight: bold; margin: 0; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5), 0 0 20px rgba(139, 0, 255, 0.3), 0 0 30px rgba(139, 0, 255, 0.2);">
+        Assistant Neural Interface
       </h1>
+      <div style="width: 60px; height: 2px; background: #fff; margin: 20px auto; box-shadow: 0 0 10px rgba(139, 0, 255, 0.5);"></div>
     </div>
 
-    <div class="details-container grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-6 mx-auto">
-      <div class="detail-item card">
-        <img src="assets/software.svg" class="icon" />
+    <div class="details-container grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-6 mx-auto" style="background: #220447; border: 1px solid rgba(139, 0, 255, 0.2); box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1);">
+      <div class="detail-item card" style="color: #fff; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+        <img src="assets/software.svg" class="icon" style="filter: brightness(0) invert(1);" />
         <span>Carrera de desarrollo de Software</span>
       </div>
-      <div class="detail-item card">
-        <img src="assets/place.svg" class="icon" />
+      <div class="detail-item card" style="color: #fff; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+        <img src="assets/place.svg" class="icon" style="filter: brightness(0) invert(1);" />
         <span>Instituto Tecnológico Superior Sudamericano</span>
       </div>
-      <div class="detail-item card">
-        <img src="assets/map.svg" class="icon" />
+      <div class="detail-item card" style="color: #fff; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+        <img src="assets/map.svg" class="icon" style="filter: brightness(0) invert(1);" />
         <span>Cuenca</span>
       </div>
-      <div class="detail-item card">
-        <img src="assets/cell.svg" class="icon" />
+      <div class="detail-item card" style="color: #fff; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+        <img src="assets/cell.svg" class="icon" style="filter: brightness(0) invert(1);" />
         <span>App Debates</span>
       </div>
     </div>
@@ -34,47 +34,100 @@
       <app-button></app-button>
     </div>
 
-    <div class="info-carousel-box" style="display: flex; flex-direction: column; align-items: center; margin-top: 56px;">
-      <div class="carousel-card" style="background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; max-width: 600px; width: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
-        <button class="button is-light is-medium carousel-arrow" (click)="prevSlide()" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%);">&#8592;</button>
-        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
-          <div *ngIf="currentSlideIndex === 0" [@carouselFade] style="width: 100%; text-align: center;">
-            <img src="assets/debate-educacion.jpg" alt="Debates en Educación" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px;" />
-            <p class="mt-2 text-xl" style="color: #2d176c; font-size: 1.2em;">Debates en Educación</p>
+    <div class="conectivismo-section" style="margin: 40px auto; max-width: 900px;">
+      <div class="conectivismo-intro" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 28px; margin-bottom: 40px;">
+        <p style="color: #fff; font-size: 1.2em; line-height: 1.6; margin: 0; text-align: left;">
+          ANI se fundamenta en el conectivismo de Siemens (2005), destacando la diversidad de opiniones, la actualización del conocimiento, el uso de redes para aprender y la habilidad de identificar nuevas necesidades educativas.         </div>
+      
+      <div class="principios-container" style="display: flex; flex-direction: column; gap: 30px; align-items: center;">
+        <div class="principios-row" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+          <div class="principio-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 2px solid rgba(139, 0, 255, 0.2); padding: 24px 20px; width: 280px; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.1) rotate(2deg)'; this.style.boxShadow='0 0 30px rgba(139, 0, 255, 0.6), inset 0 0 20px rgba(139, 0, 255, 0.2)'; this.style.border='2px solid rgba(139, 0, 255, 0.8)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'; this.style.border='2px solid rgba(139, 0, 255, 0.2)'">
+            <div class="icon-container" style="margin-bottom: 15px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <p style="color: #fff; font-size: 1em; line-height: 1.4; margin: 0;">El aprendizaje y el conocimiento residen en la diversidad de opiniones.</p>
           </div>
-          <div *ngIf="currentSlideIndex === 1" [@carouselFade] style="width: 100%; text-align: center;">
-            <img src="assets/bookthematic.webp" alt="Temáticas de Conocimiento" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px;" />
-            <p class="mt-2 text-xl" style="color: #2d176c; font-size: 1.2em;">Temáticas de Conocimiento</p>
-          </div>
-          <div *ngIf="currentSlideIndex === 2" [@carouselFade] style="width: 100%; text-align: center;">
-            <img src="assets/ctem.png" alt="Proyectos CTEM" style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px;" />
-            <p class="mt-2 text-xl" style="color: #2d176c; font-size: 1.2em;">Proyectos CTEM</p>
+          
+          <div class="principio-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 2px solid rgba(139, 0, 255, 0.2); padding: 24px 20px; width: 280px; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.1) rotate(-2deg)'; this.style.boxShadow='0 0 30px rgba(139, 0, 255, 0.6), inset 0 0 20px rgba(139, 0, 255, 0.2)'; this.style.border='2px solid rgba(139, 0, 255, 0.8)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'; this.style.border='2px solid rgba(139, 0, 255, 0.2)'">
+            <div class="icon-container" style="margin-bottom: 15px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+            </div>
+            <p style="color: #fff; font-size: 1em; line-height: 1.4; margin: 0;">El aprendizaje es un proceso de conexión de nodos especializados o fuentes de información.</p>
           </div>
         </div>
-        <button class="button is-light is-medium carousel-arrow" (click)="nextSlide()" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%);">&#8594;</button>
+        
+        <div class="principios-row" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+          <div class="principio-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 2px solid rgba(139, 0, 255, 0.2); padding: 24px 20px; width: 280px; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.1) rotate(2deg)'; this.style.boxShadow='0 0 30px rgba(139, 0, 255, 0.6), inset 0 0 20px rgba(139, 0, 255, 0.2)'; this.style.border='2px solid rgba(139, 0, 255, 0.8)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'; this.style.border='2px solid rgba(139, 0, 255, 0.2)'">
+            <div class="icon-container" style="margin-bottom: 15px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+                <rect x="6" y="6" width="12" height="8"/>
+                <line x1="8" y1="10" x2="10" y2="10"/>
+                <line x1="12" y1="10" x2="14" y2="10"/>
+                <line x1="8" y1="12" x2="10" y2="12"/>
+                <line x1="12" y1="12" x2="14" y2="12"/>
+              </svg>
+            </div>
+            <p style="color: #fff; font-size: 1em; line-height: 1.4; margin: 0;">El aprendizaje puede residir en dispositivos no humanos.</p>
+          </div>
+          
+          <div class="principio-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 2px solid rgba(139, 0, 255, 0.2); padding: 24px 20px; width: 280px; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.1) rotate(-2deg)'; this.style.boxShadow='0 0 30px rgba(139, 0, 255, 0.6), inset 0 0 20px rgba(139, 0, 255, 0.2)'; this.style.border='2px solid rgba(139, 0, 255, 0.8)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'; this.style.border='2px solid rgba(139, 0, 255, 0.2)'">
+            <div class="icon-container" style="margin-bottom: 15px;">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"/>
+                <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"/>
+                <path d="M12 3c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"/>
+                <path d="M12 21c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"/>
+              </svg>
+            </div>
+            <p style="color: #fff; font-size: 1em; line-height: 1.4; margin: 0;">Es necesario fomentar y mantener las conexiones para facilitar el aprendizaje continuo.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-<div class="enfoque-educativo-box" style="max-width: 900px; margin: 48px auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-  <div class="enfoque-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/ANI.png" style="max-width: 220px; width: 100%; border-radius: 12px;" alt="ANI" />
-  </div>
-  <div class="enfoque-content" style="flex: 2; text-align: left;">
-    <h1 class="text-2xl font-bold mb-4" style="color: #4b2996;">Enfoque Educativo</h1>
-    <p style="color: #2d176c; font-size: 1.1em;">ANI es una plataforma educativa diseñada para fomentar debates entre estudiantes a través de una aplicación móvil. Los docentes pueden gestionar la dinámica del debate desde la versión web, donde tienen control sobre los usuarios, las salas de discusión y los temas a tratar.</p>
-    <h2 class="text-xl font-semibold mt-4" style="color: #4b2996;">Metodología de Uso</h2>
-    <p style="color: #2d176c; font-size: 1.1em;">Durante el debate, los estudiantes participan grabando sus intervenciones en audio. Una vez finalizadas las grabaciones, la aplicación las procesa automáticamente, convirtiéndolas en texto y generando grafos de conocimiento mediante las API de OpenAI. Estos grafos permiten visualizar las interacciones y el desarrollo del debate, proporcionando una herramienta valiosa para el análisis y la evaluación del aprendizaje.</p>
-    <div style="display: flex; justify-content: flex-start; margin-top: 24px;">
-      <app-button></app-button>
-    </div>
-  </div>
-</div>
+      <div class="enfoque-section" style="margin: 40px auto; max-width: 900px;">
+        <div class="enfoque-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 28px; margin-bottom: 40px; display: flex; align-items: center; gap: 32px; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(139, 0, 255, 0.4), inset 0 0 20px rgba(139, 0, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'">
+          <div class="enfoque-content" style="flex: 1;">
+            <h2 style="color: #fff; font-size: 1.4em; font-weight: bold; margin-bottom: 18px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Enfoque Educativo</h2>
+            <p style="color: #fff; font-size: 1.1em; line-height: 1.6; margin: 0;">
+              ANI es una plataforma educativa diseñada para fomentar debates entre estudiantes a través de una aplicación móvil. Los docentes pueden gestionar la dinámica del debate desde la versión web, donde tienen control sobre los usuarios, las salas de discusión y los temas a tratar.
+            </p>
+          </div>
+          <div class="enfoque-image" style="flex: 1; text-align: center;">
+            <img src="assets/enfoque.png" alt="Enfoque Educativo" style="max-width: 320px; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);" />
+          </div>
+        </div>
+        
+        <div class="metodologia-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 28px; display: flex; align-items: center; gap: 32px; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(139, 0, 255, 0.4), inset 0 0 20px rgba(139, 0, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1)'">
+          <div class="metodologia-image" style="flex: 1; text-align: center;">
+            <img src="assets/debate-estudiante.png" alt="Debate Estudiantil" style="max-width: 320px; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);" />
+          </div>
+          <div class="metodologia-content" style="flex: 1;">
+            <h2 style="color: #fff; font-size: 1.4em; font-weight: bold; margin-bottom: 18px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Metodología de Uso</h2>
+            <p style="color: #fff; font-size: 1.1em; line-height: 1.6; margin: 0;">
+              Durante el debate, los estudiantes participan grabando sus intervenciones en audio. Una vez finalizadas las grabaciones, la aplicación las procesa automáticamente, convirtiéndolas en texto y generando grafos de conocimiento mediante las API de OpenAI. Estos grafos permiten visualizar las interacciones y el desarrollo del debate, proporcionando una herramienta valiosa para el análisis y la evaluación del aprendizaje.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<div class="diagrama-box animate-diagrama" style="max-width: 900px; margin: 48px auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; flex-direction: row; align-items: center; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);">
-  <img src="assets/diagrama.png" alt="Diagrama" style="max-width: 320px; width: 100%; border-radius: 12px; margin-right: 32px;" />
-  <div style="flex: 1; color: #4b2996; display: flex; flex-direction: column;">
-    <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 18px; color: #4b2996;">Diagrama</h2>
-    <div style="font-size: 1.08em;">
+<div class="diagrama-box animate-diagrama" style="max-width: 900px; margin: 48px auto 64px auto; background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 28px; display: flex; flex-direction: row; align-items: center; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);">
+  <img src="assets/diagramacompleto.png" alt="Diagrama" style="max-width: 320px; width: 100%; border-radius: 12px; margin-right: 32px;" />
+  <div style="flex: 1; color: #fff; display: flex; flex-direction: column;">
+    <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 18px; color: #fff;">Diagrama</h2>
+    <div style="font-size: 1.08em; color: #fff;">
       La implementación del debate como herramienta de aprendizaje activa responde a la necesidad de transitar desde un enfoque tradicional hacia un paradigma centrado en el estudiante. Esta estrategia didáctica promueve la construcción del conocimiento a través de la argumentación, el análisis crítico y la interacción entre los participantes. En este caso, se emplea la aplicación ANI como instrumento para la realización de los debates, permitiendo una experiencia interactiva y digitalizada.
     </div>
   </div>
@@ -82,7 +135,7 @@
 <style>
   .animate-diagrama:hover {
     transform: scale(1.04);
-    box-shadow: 0 8px 32px rgba(80, 60, 160, 0.18);
+    box-shadow: 0 12px 32px rgba(139, 0, 255, 0.4), inset 0 0 20px rgba(139, 0, 255, 0.2);
   }
 </style>
 <div class="footer mt-10">

@@ -1,6 +1,6 @@
 .container {
-  background: linear-gradient(90deg, #e0e7ff 0%, #af9ef7 100%) !important;
-  color: #2d176c !important;
+  background: #000 !important;
+  color: #fff !important;
   width: 100%;
   padding: 40px 0;
   display: flex;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  color: #2d176c !important;
+  color: #fff !important;
   font-family: "IBM Plex Sans", "Roboto Slab", "Orienta";
   font-size: 15px;
   margin-bottom: 30px;
@@ -30,12 +30,12 @@
 .column h1 {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #2d176c !important;
+  color: #fff !important;
 }
 
 .column p {
   margin: 8px 0;
-  color: #2d176c !important;
+  color: #fff !important;
 }
 
 .column p:hover {
@@ -78,13 +78,13 @@
 
 .autor {
   margin-top: 30px;
-  color: #2d176c !important;
+  color: #fff !important;
   text-align: center;
   font-size: 14px;
 }
 
 .icons a svg {
-  stroke: #2d176c !important; 
+  stroke: #fff !important; 
   fill: #ffffff00; 
   transition: stroke 0.3s ease, fill 0.3s ease; 
 }

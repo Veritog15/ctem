@@ -1,6 +1,6 @@
 .initial-section {
-  background: linear-gradient(135deg, #af9ef7 0%, #7ecbff 100%) !important;
-  color: #2d176c;
+  background: #0f0330 !important;
+  color: #fff;
   position: relative;
   overflow: hidden;
   min-height: 400px;
@@ -240,4 +240,26 @@
   border-radius: 10px 10px 0 0;
   margin-bottom: 12px;
   background: #e0e7ff;
+}
+
+.area-item:hover {
+  transform: scale(1.1);
+}
+
+.area-item {
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover, .ai-card-long:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(139, 0, 255, 0.4), inset 0 0 20px rgba(139, 0, 255, 0.2);
+  z-index: 2;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card {
+  cursor: pointer;
 }

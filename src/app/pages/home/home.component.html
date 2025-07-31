@@ -1,108 +1,166 @@
-<div class="initial-section" style="padding: 40px 20px; position: relative; overflow: hidden; min-height: 400px; background: linear-gradient(135deg, #af9ef7 0%, #e0e7ff 100%);">
+<div class="initial-section" style="padding: 40px 20px; position: relative; overflow: hidden; min-height: 400px; background: #0f0330;">
   <div class="title-button-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; max-width: 800px; margin: 0 auto; position: relative; z-index: 10; padding-top: 100px;">
     <div class="animated-title" style="text-align: center; font-family: 'Arial', sans-serif;">
-      <h1 class="animated-main-title" [class.ng-animating]="animatingTitle">{{ currentTitle }}</h1>
+      <div style="margin-bottom: 20px;">
+        <img src="assets/logoANI.svg" alt="ANI Logo" style="max-width: 200px; height: auto;" />
+      </div>
+      <h2 style="color: #fff; font-size: 1.5em; margin-bottom: 10px; font-weight: normal;">Assistant Neural Interface</h2>
+      <div style="width: 100px; height: 1px; background-color: #fff; margin: 20px auto;"></div>
+      <p style="color: #fff; font-size: 1.1em; margin-top: 20px; text-align: center;">Aplicación de debates y generación de grafos de conocimiento</p>
     </div>
     <div class="button2-wrapper">
       <div class="button2-center">
         <app-button style="background-color: #fff; color: #a0007e; font-weight: bold; padding: 15px 30px; border: none; border-radius: 30px; cursor: pointer; font-size: 1.2em; box-shadow: none;">Prueba ANI</app-button>
       </div>
     </div>
-  </div>
-  <div class="info-cards-row" style="display: flex; justify-content: center; gap: 32px; margin-top: 60px; flex-wrap: wrap;">
-    <div class="info-card">
-      <img src="assets/debate-educacion.jpg" alt="Debate Educativo" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px 10px 0 0; margin-bottom: 12px;" />
-      <h3>Debate Educativo</h3>
-      <p>Participa en debates estructurados y analiza la participación estudiantil para potenciar el aprendizaje.</p>
+    <div class="ani-info-box-new" style="max-width: 800px; margin: 40px auto 0 auto; padding: 32px 28px; border-radius: 18px; background: #220447; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); text-align: center; border: 1px solid rgba(139, 0, 255, 0.2);">
+      <p style="color: #fff; font-size: 1.2em; line-height: 1.6; margin: 0;">
+        ANI es una plataforma web y móvil diseñada para potenciar el aprendizaje a través de debates estructurados y el análisis de la participación estudiantil. Esta herramienta es el resultado de una investigación multidisciplinaria que busca transformar la manera en que docentes y estudiantes interactúan en el aula. Es un grupo de desarrolladores del Instituto Superior Tecnológico Particular Sudamericano donde integran  diferentes áreas
+      </p>
     </div>
-    <div class="info-card">
+    
+    <div class="areas-section" style="margin: 40px auto; padding: 60px 20px; display: flex; justify-content: center; align-items: center; gap: 80px; flex-wrap: wrap;">
+      <div class="area-item" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+        <div class="icon-circle" style="width: 100px; height: 100px; border-radius: 50%; background: #220447; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 3px solid #220447; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"/>
+            <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"/>
+            <path d="M12 3c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"/>
+            <path d="M12 21c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"/>
+          </svg>
+        </div>
+        <span style="color: #fff; font-weight: bold; font-size: 1.2em;">Ciencia</span>
+      </div>
+      
+      <div class="area-item" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+        <div class="icon-circle" style="width: 100px; height: 100px; border-radius: 50%; background: #220447; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 3px solid #220447; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+            <rect x="6" y="6" width="12" height="8"/>
+            <line x1="8" y1="10" x2="10" y2="10"/>
+            <line x1="12" y1="10" x2="14" y2="10"/>
+            <line x1="8" y1="12" x2="10" y2="12"/>
+            <line x1="12" y1="12" x2="14" y2="12"/>
+          </svg>
+        </div>
+        <span style="color: #fff; font-weight: bold; font-size: 1.2em;">Tecnología</span>
+      </div>
+      
+      <div class="area-item" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+        <div class="icon-circle" style="width: 100px; height: 100px; border-radius: 50%; background: #220447; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 3px solid #220447; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            <path d="M8 10h2v2h-2z"/>
+            <path d="M12 10h2v2h-2z"/>
+          </svg>
+        </div>
+        <span style="color: #fff; font-weight: bold; font-size: 1.2em;">Educación</span>
+      </div>
+      
+      <div class="area-item" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+        <div class="icon-circle" style="width: 100px; height: 100px; border-radius: 50%; background: #220447; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 3px solid #220447; box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <span style="color: #fff; font-weight: bold; font-size: 1.2em;">Matemática</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="app-screenshots" style="margin: 40px auto; text-align: center; max-width: 1200px;">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-bottom: 40px;">
+      <div class="flip-card" style="width: 200px; height: 400px; perspective: 1000px; margin: 10px;">
+        <div class="flip-card-inner" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s; transform-style: preserve-3d;">
+          <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 15px; overflow: hidden;">
+            <img src="assets/inicioDark.png" alt="Pantalla Oscura" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+          <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); border-radius: 15px; overflow: hidden;">
+            <img src="assets/inicioWhite.png" alt="Pantalla Clara" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+        </div>
+        <p style="color: #fff; font-size: 1em; margin: 10px 0 0 0;">Inicio Oscuro ↔ Claro</p>
+      </div>
+      
+      <div class="flip-card" style="width: 200px; height: 400px; perspective: 1000px; margin: 10px;">
+        <div class="flip-card-inner" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s; transform-style: preserve-3d;">
+          <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 15px; overflow: hidden;">
+            <img src="assets/salasDark.png" alt="Salas Oscuro" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+          <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); border-radius: 15px; overflow: hidden;">
+            <img src="assets/salasWhite.png" alt="Salas Claro" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+        </div>
+        <p style="color: #fff; font-size: 1em; margin: 10px 0 0 0;">Salas Oscuro ↔ Claro</p>
+      </div>
+      
+      <div class="flip-card" style="width: 200px; height: 400px; perspective: 1000px; margin: 10px;">
+        <div class="flip-card-inner" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s; transform-style: preserve-3d;">
+          <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 15px; overflow: hidden;">
+            <img src="assets/rondasDark.png" alt="Rondas Oscuro" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+          <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); border-radius: 15px; overflow: hidden;">
+            <img src="assets/rondasWhite.png" alt="Rondas Claro" style="width: 100%; height: 100%; object-fit: contain;" />
+          </div>
+        </div>
+        <p style="color: #fff; font-size: 1em; margin: 10px 0 0 0;">Rondas Oscuro ↔ Claro</p>
+      </div>
+    </div>
+    
+    <div class="ani-description-box" style="max-width: 800px; margin: 0 auto; padding: 32px 28px; border-radius: 18px; background: #220447; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); text-align: center; border: 1px solid rgba(139, 0, 255, 0.2);">
+      <p style="color: #fff; font-size: 1.2em; line-height: 1.6; margin: 0;">
+        ANI es una aplicación web diseñada para facilitar la gestión de sesiones de estudio y aprendizaje. Con un diseño intuitivo y moderno, disponible en temas oscuro y blanco, permite a los usuarios iniciar sesión fácilmente, acceder a sus salas personalizadas y organizar temas como historia o ciencias. Ideal para estudiantes que buscan optimizar su tiempo y recursos.
+      </p>
+    </div>
+  </div>
+  
+  <div style="text-align: center; margin: 60px 0 40px 0;">
+    <h2 style="color: #fff; font-size: 2.5em; margin-bottom: 10px; font-weight: normal; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5), 0 0 20px rgba(139, 0, 255, 0.3), 0 0 30px rgba(139, 0, 255, 0.2);">Organización</h2>
+  </div>
+  
+  <div class="info-cards-row" style="display: flex; justify-content: center; gap: 32px; margin-top: 60px; flex-wrap: wrap; background: #0f0330; padding: 40px 20px; margin-left: -20px; margin-right: -20px; margin-bottom: -40px;">
+    <div class="info-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 24px; min-width: 220px; max-width: 300px; text-align: left; color: #fff; margin-bottom: 20px; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1); cursor: pointer;">
+      <img src="assets/debate.png" alt="Debate Educativo" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px 10px 0 0; margin-bottom: 12px;" />
+      <h3 style="margin-top: 0; color: #fff; font-size: 1.3em; font-weight: 600;">Debate Educativo</h3>
+      <p style="color: #fff; font-size: 1em; margin-bottom: 0;">Participa en debates estructurados y analiza la participación estudiantil para potenciar el aprendizaje.</p>
+    </div>
+    <div class="info-card" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 24px; min-width: 220px; max-width: 300px; text-align: left; color: #fff; margin-bottom: 20px; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1); cursor: pointer;">
       <img src="assets/grafos.png" alt="Grafos de Conocimiento" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px 10px 0 0; margin-bottom: 12px;" />
-      <h3>Grafos de Conocimiento</h3>
-      <p>Convierte debates académicos en grafos visuales para esquematizar el conocimiento matemático.</p>
+      <h3 style="margin-top: 0; color: #fff; font-size: 1.3em; font-weight: 600;">Grafos de Conocimiento</h3>
+      <p style="color: #fff; font-size: 1em; margin-bottom: 0;">Convierte debates académicos en grafos visuales para esquematizar el conocimiento matemático.</p>
     </div>
-    <div class="info-card ai-card">
-      <div class="ai-card-flex">
-        <img src="assets/microthematic2.png" alt="Inteligencia Artificial" class="ai-card-img" />
-        <div class="ai-card-content">
-          <h3>Inteligencia Artificial</h3>
-          <p>Utiliza IA para analizar y registrar la información clave de cada debate en la plataforma.</p>
-        </div>
-      </div>
+  </div>
+  
+  <div class="ai-card-long" style="background: #220447; border-radius: 18px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); border: 1px solid rgba(139, 0, 255, 0.2); padding: 32px 28px; margin: 40px auto; max-width: 800px; display: flex; align-items: center; gap: 30px; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1); cursor: pointer;">
+    <img src="assets/inteligenciaArtificial.png" alt="Inteligencia Artificial" style="width: 140px; height: 140px; object-fit: cover; border-radius: 18px; background: #4B0082; flex-shrink: 0;" />
+    <div class="ai-card-content" style="flex: 1;">
+      <h3 style="margin-top: 0; color: #fff; font-size: 1.3em; font-weight: 600;">Inteligencia Artificial</h3>
+      <p style="color: #fff; font-size: 1em; margin-bottom: 0;">La plataforma extiende el aprendizaje a través de la inteligencia artificial (IA), demostrando que este puede residir en dispositivos no humanos. Además, ANI fomenta la conexión continua y la actualización del conocimiento, asegurando un aprendizaje dinámico y relevante.</p>
     </div>
   </div>
 </div>
 
-<div class="ani-info-box">
-  <p>
-    ANI es una plataforma web y móvil diseñada para potenciar el aprendizaje a través de debates estructurados y el análisis de la participación estudiantil. Esta herramienta es el resultado de una investigación multidisciplinaria que busca transformar la manera en que docentes y estudiantes interactúan en el aula.
-  </p>
-</div>
-
-<div class="section" style="padding: 40px 20px;">
-  <div class="bulma-box bulma-shadow" style="max-width: 900px; margin: 0 auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px;">
-    <div class="title-container" style="max-width: 1200px; margin: 0 auto;">
-      <h2 style="color: #4b2996; font-size: 2em; text-align: center; font-family: 'Arial', sans-serif;">Inteligencia Artificial y Conectivismo para Esquematizar Conocimiento Matemático</h2>
-    </div>
-    <div class="section2" style="max-width: 800px; margin: 40px auto;">
-      <div class="title-container" style="margin-bottom: 20px;">
-        <h2 style="color: #4b2996; font-size: 1.8em; text-align: center; font-family: 'Arial', sans-serif;">Objetivos</h2>
-      </div>
-      <div class="objetivos-carousel" style="display: flex; justify-content: center; align-items: center;">
-        <button class="button is-light is-medium objetivos-arrow" (click)="prevObjetivo()" style="margin-right: 16px;">&#8592;</button>
-        <div class="objetivo-card" *ngIf="currentObjetivoIndex === 0" [@objetivoFade] style="width: 500px; height: 400px; background: #f8f8ff; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10);">
-          <img src="assets/objetive1.png" alt="Objetivo 1" style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px 10px 0 0;" />
-          <h3 style="color: #4b2996; font-size: 1.5em; margin: 10px 0;">Objetivos</h3>
-          <p style="color: #2d176c; font-size: 1em;">Determinar los fundamentos tecnológicos y conectivistas en la educación matemática.</p>
-        </div>
-        <div class="objetivo-card" *ngIf="currentObjetivoIndex === 1" [@objetivoFade] style="width: 500px; height: 400px; background: #f8f8ff; border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10);">
-          <img src="assets/objetive2.jpeg" alt="Objetivo 2" style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px 10px 0 0;" />
-          <h3 style="color: #4b2996; font-size: 1.5em; margin: 10px 0;">Objetivos</h3>
-          <p style="color: #2d176c; font-size: 1em;">Desarrollar aplicación de código abierto con inteligencia artificial para registrar debates académicos en formato de audio y convertir en grafos de conocimiento.</p>
-        </div>
-        <button class="button is-light is-medium objetivos-arrow" (click)="nextObjetivo()" style="margin-left: 16px;">&#8594;</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section" style="padding: 40px 20px;">
-  <div class="bulma-box bulma-shadow" style="max-width: 1100px; margin: 0 auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px;">
-    <div class="title-container2" style="max-width: 1200px; margin: 0 auto;">
-      <h2 style="color: #4b2996; font-size: 2em; text-align: center; font-family: 'Arial', sans-serif;">Producción</h2>
-    </div>
-    <div class="produccion-cards-row">
-      <div class="produccion-card">
-        <img src="assets/article.png" alt="Imagen 5" class="produccion-img" />
-        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">Artículo Repensando la Educación Matemática:</p>
-        <p class="text-body" style="color: #2d176c; font-size: 1em;">Lecturas y críticas epistemológicas a los aportes del Conectivismo como modelo educativo.</p>
-      </div>
-      <div class="produccion-card">
-        <img src="assets/ctem.png" alt="Imagen 6" class="produccion-img" />
-        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">CTEM: Sistema de generación de grafos para el aprendizaje matemático.</p>
-        <p class="text-body" style="color: #2d176c; font-size: 1em;">Sistema de generación de grafos para el aprendizaje matemático.</p>
-      </div>
-      <div class="produccion-card">
-        <img src="assets/article.svg" alt="Imagen 7" class="produccion-img" />
-        <p class="text-title2" style="color: #4b2996; font-size: 1.2em; margin: 10px 0;">Manual para docentes de matemáticas sobre el uso pedagógico de los grafos de conocimiento.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container" style="background: linear-gradient(90deg, #e0e7ff 0%, #af9ef7 100%); padding: 40px 20px;">
+<div class="container" style="background: #000; padding: 40px 20px; color: #fff;">
   <div class="footer-section" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
     <div class="column" style="flex: 1; min-width: 200px; margin: 10px;">
-      <h1 style="font-size: 1.5em;">Páginas</h1>
-      <p style="font-size: 1em; cursor: pointer;" (click)="navigate1()">Inicio</p>
-      <p style="font-size: 1em; cursor: pointer;" (click)="navigate2()">Información</p>
-      <h1 style="font-size: 1.5em;">Contactos</h1>
-      <p style="font-size: 1em;">cteminfo&#64;gmail.com</p>
+      <h1 style="font-size: 1.5em; color: #fff;">Páginas</h1>
+      <p style="font-size: 1em; cursor: pointer; color: #fff;" (click)="navigate1()">Inicio</p>
+      <p style="font-size: 1em; cursor: pointer; color: #fff;" (click)="navigate2()">Información</p>
+      <h1 style="font-size: 1.5em; color: #fff;">Contactos</h1>
+      <p style="font-size: 1em; color: #fff;">cteminfo&#64;gmail.com</p>
     </div>
     <div class="column" style="flex: 1; min-width: 200px; margin: 10px;">
-      <h1 style="font-size: 1.5em;">Aplicación</h1>
-      <p style="font-size: 1em; cursor: pointer;" (click)="navigate5()">Aplicación Móvil</p>
-      <p style="font-size: 1em; cursor: pointer;" (click)="navigate6()">Aplicación Web</p>
-      <p style="font-size: 1em; cursor: pointer;" (click)="navigate7()">Metodología de Uso</p>
+      <h1 style="font-size: 1.5em; color: #fff;">Aplicación</h1>
+      <p style="font-size: 1em; cursor: pointer; color: #fff;" (click)="navigate5()">Aplicación Móvil</p>
+      <p style="font-size: 1em; cursor: pointer; color: #fff;" (click)="navigate6()">Aplicación Web</p>
+      <p style="font-size: 1em; cursor: pointer; color: #fff;" (click)="navigate7()">Metodología de Uso</p>
     </div>
     <div class="column" style="flex: 1; min-width: 200px; margin: 10px; text-align: center;">
       <div class="logo-ctem" style="margin-bottom: 20px;">
@@ -113,13 +171,13 @@
       </div>
       <div class="icons" style="display: flex; justify-content: center; gap: 10px;">
         <a href="https://www.facebook.com/profile.php?id=61564491620602&mibextid=LQQJ4d" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2d176c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
           </svg>
         </a>
         <a href="https://www.instagram.com/ctem.ec?igsh=MW9ocDQ5aG01aWFvaQ==" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d176c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
             <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -127,12 +185,12 @@
           </svg>
         </a>
         <a href="https://www.tiktok.com/@ctemcongreso" target="_blank">
-          <svg fill="#2d176c" width="26px" height="26px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#2d176c">
+          <svg fill="#fff" width="26px" height="26px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
             <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path>
           </svg>
         </a>
         <a href="https://www.linkedin.com/in/ctem-congreso-238615322/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2d176c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
             <path d="M8 11l0 5" />
@@ -149,7 +207,7 @@
     <img src="assets/logo.png" alt="Logo Principal" style="max-width: 150px;" />
   </div>
 
-  <div class="autor" style="text-align: center; margin-top: 20px;">
-    <p style="font-size: 0.9em; font-family: 'Arial', sans-serif;">2024.©Instituto Superior Tecnológico Sudamericano-Cuenca. All rights reserved</p>
+  <div class="autor" style="text-align: center; margin-top: 20px; color: #fff;">
+    <p style="font-size: 0.9em; font-family: 'Arial', sans-serif; color: #fff;">2024.©Instituto Superior Tecnológico Sudamericano-Cuenca. All rights reserved</p>
   </div>
 </div>

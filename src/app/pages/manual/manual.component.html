@@ -1,265 +1,736 @@
-<div style="display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #af9ef7 0%, #7ecbff 100%); padding-top: 100px;">
+<div style="display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: #0f0330; padding-top: 100px;">
   <img src="assets/logoANI.svg" alt="ANI" style="max-width: 180px; margin-bottom: 16px;" />
-  <h1 style="color: #fff; font-size: 2.5em; font-weight: bold; margin-bottom: 32px; text-align: center;">Manual</h1>
-  <div style="background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; max-width: 600px; text-align: center; margin-bottom: 40px;">
-    El presente manual está diseñado para guiar a los docentes en el uso del software ANI, una aplicación educativa que permite gestionar y moderar debates académicos entre estudiantes. ANI está compuesto por dos entornos:
-  </div>
-  <div style="display: flex; gap: 32px; justify-content: center; margin-bottom: 64px; flex-wrap: wrap;">
-    <div class="manual-card" style="background: #f8f8ff; border-radius: 16px; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10); padding: 28px 20px; width: 280px; text-align: center; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1); cursor: pointer;">
-      <h3 style="color: #4b2996; font-size: 1.3em; font-weight: 600; margin-bottom: 12px;">Aplicación Web</h3>
-      <p style="color: #2d176c; font-size: 1em;">Dirigida a docentes y administradores, la cual permite gestionar salas, asignar estudiantes y revisar transcripciones de debates.</p>
-    </div>
-    <div class="manual-card" style="background: #f8f8ff; border-radius: 16px; box-shadow: 0 4px 16px rgba(80, 60, 160, 0.10); padding: 28px 20px; width: 280px; text-align: center; transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1); cursor: pointer;">
-      <h3 style="color: #4b2996; font-size: 1.3em; font-weight: 600; margin-bottom: 12px;">Aplicación Móvil</h3>
-      <p style="color: #2d176c; font-size: 1em;">Usada por los estudiantes, la cual permite participar en debates asignados por los docentes mediante grabaciones de audio.</p>
-    </div>
-  </div>
-  <div class="manual-instalacion-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-instalacion-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px;">Instalación y Configuración</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Acceder a la plataforma a través del navegador web.<br/>
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              http://ctem.ec:5173/login
-            </div>
+  <h1 style="color: #fff; font-size: 2.5em; font-weight: bold; margin-bottom: 32px; text-align: center; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5), 0 0 20px rgba(139, 0, 255, 0.3), 0 0 30px rgba(139, 0, 255, 0.2);">Manual Interactivo</h1>
+  
+  <!-- Sección introductoria -->
+  <div style="max-width: 1000px; margin: 0 auto 40px auto; padding: 0 20px;">
+    <p style="color: #fff; font-size: 1.2em; line-height: 1.6; text-align: center; margin-bottom: 40px;">
+      El presente manual está diseñado para guiar a los docentes en el uso del software ANI, una aplicación educativa que permite gestionar y moderar debates académicos entre estudiantes. ANI está compuesto por dos entornos:
+    </p>
+    
+    <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+      <!-- Aplicación Web -->
+      <div style="flex: 1; min-width: 300px; max-width: 450px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+          <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+              <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#220447"/>
+            </svg>
           </div>
-        </li>
-        <li>
-          Iniciar sesión con las credenciales proporcionadas por el administrador.<br/>
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              usuario: email institucional<br/>
-              contraseña: ********
-            </div>
+          <h3 style="color: #fff; font-size: 1.4em; margin: 0; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Aplicación Web</h3>
+        </div>
+        <div style="background: #220447; padding: 25px; border-radius: 12px; border: 1px solid rgba(139, 0, 255, 0.3); box-shadow: 0 0 20px rgba(139, 0, 255, 0.2);">
+          <p style="color: #fff; font-size: 1.1em; line-height: 1.6; margin: 0;">
+            Dirigida a docentes y administradores, la cual permite gestionar salas, asignar estudiantes y revisar transcripciones de debates.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Aplicación Móvil -->
+      <div style="flex: 1; min-width: 300px; max-width: 450px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+          <div style="width: 50px; height: 50px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+              <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#220447"/>
+            </svg>
           </div>
-        </li>
-      </ol>
-    </div>
-    <div class="manual-instalacion-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m1.png" alt="Instalación y Configuración" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-  </div>
-  <div class="manual-crear-sala-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-crear-sala-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m2.png" alt="Crear una sala" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-    <div class="manual-crear-sala-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000000;">Crear una sala</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          En el panel principal, dar clic en la opción "Rooms".<br/>
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              En el panel de Room List, dar clic en el botón crear sala<br/>
-              <b>"Create Room".</b>
-            </div>
-          </div>
-        </li>
-      </ol>
+          <h3 style="color: #fff; font-size: 1.4em; margin: 0; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Aplicación Móvil</h3>
+        </div>
+        <div style="background: #fff; padding: 25px; border-radius: 12px; border: 1px solid rgba(139, 0, 255, 0.3); box-shadow: 0 0 20px rgba(139, 0, 255, 0.2);">
+          <p style="color: #220447; font-size: 1.1em; line-height: 1.6; margin: 0;">
+            Usada por los estudiantes, la cual permite participar en debates asignados por los docentes mediante grabaciones de audio.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="manual-configurar-sala-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-configurar-sala-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Configurar Sala</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Ingrese el nombre de la sala
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Matemática de Conjuntos"
+  
+  <!-- Controles del libro -->
+  <div style="margin-bottom: 20px; display: flex; gap: 15px; align-items: center;">
+    <button (click)="previousPage()" style="background: #220447; color: #fff; border: 1px solid rgba(139, 0, 255, 0.3); padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.boxShadow='none'">
+      ← Anterior
+    </button>
+    <span style="color: #fff; font-size: 1.1em; padding: 0 20px;">Página {{currentPage}} de {{totalPages}}</span>
+    <button (click)="nextPage()" style="background: #220447; color: #fff; border: 1px solid rgba(139, 0, 255, 0.3); padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 0 15px rgba(139, 0, 255, 0.5)'" onmouseout="this.style.boxShadow='none'">
+      Siguiente →
+    </button>
+  </div>
+
+  <!-- Indicador de modo -->
+  <div style="margin-bottom: 10px; padding: 8px 16px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px solid rgba(139, 0, 255, 0.3);">
+    <span style="color: #fff; font-size: 0.9em;">
+      {{useTurnJS ? 'Modo: Libro Interactivo (Turn.js)' : 'Modo: Navegación Simple'}}
+    </span>
+  </div>
+
+  <!-- Contenedor del libro -->
+  <div style="background: #220447; border-radius: 18px; min-height: 600px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1); padding: 20px; border: 1px solid rgba(139, 0, 255, 0.2); margin-bottom: 40px;">
+    <div id="flipbook" [style.display]="useTurnJS ? 'block' : 'none'">
+      <!-- Página 1: ANI Logo y Descripción (izquierda) -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="assets/logoANI.svg" alt="ANI" style="max-width: 200px; margin-bottom: 30px;" />
+        <!-- <h1 style="font-size: 3em; margin-bottom: 20px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">ANI</h1> -->
+        <h2 style="font-size: 1.5em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Assistant Neural Interface</h2>
+        <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent, rgba(139, 0, 255, 0.5), transparent); margin: 20px 0;"></div>
+        <p style="font-size: 1.3em; line-height: 1.6; max-width: 400px; text-align: center;">
+          Aplicación de debates y generación de grafos de conocimiento
+        </p>
+      </div>
+
+      <!-- Página 2: Manual ANI (derecha) -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h1 style="font-size: 3em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Manual ANI</h1>
+        <p style="font-size: 1.4em; line-height: 1.6; max-width: 500px; margin-bottom: 30px;">
+          Guía completa para el uso de la plataforma ANI (Assistant Neural Interface)
+        </p>
+        <div style="padding: 25px; background: rgba(139, 0, 255, 0.1); border-radius: 15px; border: 1px solid rgba(139, 0, 255, 0.3);">
+          <h3 style="margin-bottom: 20px; color: #fff; font-size: 1.3em;">Componentes del Sistema</h3>
+          <div style="display: flex; gap: 30px; justify-content: center;">
+            <div style="text-align: center;">
+              <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.2em;">Aplicación Web</h4>
+              <p style="font-size: 1em; color: #ccc;">Para docentes</p>
+            </div>
+            <div style="text-align: center;">
+              <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.2em;">Aplicación Móvil</h4>
+              <p style="font-size: 1em; color: #ccc;">Para estudiantes</p>
             </div>
           </div>
-        </li>
-        <li style="margin-bottom: 32px;">
-          Ingresa una breve descripción (opcional)
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Opcional"
-            </div>
-          </div>
-        </li>
-        <li>
-          Guardar la configuración
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              Click en "Create Room"
-            </div>
-          </div>
-        </li>
-      </ol>
+        </div>
+      </div>
+
+      <!-- Página 3: Instalación - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Instalación y Configuración</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Acceder a la plataforma:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                http://ctem.ec:5173/login
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Iniciar sesión:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Usuario: email institucional<br/>
+                Contraseña: ********
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 4: Instalación - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Pantalla de Inicio de Sesión</h3>
+        <img src="assets/m1.png" alt="Instalación" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 5: Crear Sala - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Crear una Sala</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">En el panel principal:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar clic en la opción "Rooms"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Crear sala:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                En el panel de Room List, dar clic en el botón "Create Room"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 6: Crear Sala - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Room List</h3>
+        <img src="assets/m2.png" alt="Crear Sala" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 7: Configurar Sala - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Configurar Sala</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Nombre de la sala:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Matemática de Conjuntos"
+              </div>
+            </li>
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Descripción (opcional):</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Opcional"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Guardar configuración:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Click en "Create Room"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 8: Configurar Sala - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Formulario de Creación de Sala</h3>
+        <img src="assets/m3.png" alt="Configurar Sala" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 9: Agregar Estudiantes - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Agregar Estudiantes</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Dar click en "Add User":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Seleccionar los estudiantes que pertenecen al debate del tema creado
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Confirmar usuarios:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Luego de seleccionar, dar click en "Añadir Usuarios"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 10: Agregar Estudiantes - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Agregar Usuarios</h3>
+        <img src="assets/m4.png" alt="Agregar Estudiantes" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 11: Definir Tema - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Definir Tema del Debate</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">En "Room List":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Identificar la sala donde se creará el tema
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Dar click en Topic:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Dar click en Topic"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 12: Definir Tema - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Room List con Botón Topic</h3>
+        <img src="assets/m5.png" alt="Definir Tema" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 13: Configuración Topic - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Configuración del Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Ingrese el título del tema:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Álgebra Booleana"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Crear tema:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar click en el botón con la flecha ">"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 14: Configuración Topic - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Formulario de Creación de Topic</h3>
+        <img src="assets/m6.png" alt="Configuración Topic" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 15: Agregar Estudiantes Topic - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Agregar Estudiantes al Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Dar click en "Add User":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Seleccionar los estudiantes que pertenecen al debate del tema creado
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Confirmar usuarios:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Luego de seleccionar, dar click en "Añadir Usuarios"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 16: Agregar Estudiantes Topic - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Agregar Usuarios al Topic</h3>
+        <img src="assets/m7.png" alt="Agregar Estudiantes Topic" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 17: Habilitación - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Habilitación del Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Habilitar el tema del debate:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar click en el switch
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Estado:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Habilitado"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 18: Habilitación - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Habilitación de Topic</h3>
+        <img src="assets/m8.png" alt="Habilitación" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+
+
+      <!-- Página 19: Transcripción - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Transcripción del Debate</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Para visualizar las transcripciones:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Hacer clic en el botón
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Ver transcripción:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "View Transcript"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 20: Transcripción - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Transcripciones</h3>
+        <img src="assets/m9.png" alt="Transcripción" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+      <!-- Página 21: Visualización Grafo - Texto -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Visualización del Grafo</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Para visualizar el grafo del debate:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar clic en el botón
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Ver grafo:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "View Graph"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Página 22: Visualización Grafo - Imagen -->
+      <div style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Visualización del Grafo de Conocimiento</h3>
+        <img src="assets/m10.png" alt="Visualización Grafo" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+
+
+      <!-- Página 22: Página Final -->
+      <div style="background: #220447; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 600px; padding: 40px; text-align: center; box-sizing: border-box;">
+        <h1 style="font-size: 2.5em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">¡Manual Completado!</h1>
+        <p style="font-size: 1.3em; line-height: 1.6; max-width: 500px; margin-bottom: 30px;">
+          Has completado la guía del manual ANI. Ahora estás listo para utilizar la plataforma de manera efectiva.
+        </p>
+        <div style="padding: 25px; background: rgba(139, 0, 255, 0.1); border-radius: 15px; border: 1px solid rgba(139, 0, 255, 0.3); margin-bottom: 30px;">
+          <h3 style="margin-bottom: 20px; color: #fff; font-size: 1.3em;">Próximos Pasos</h3>
+          <ul style="text-align: left; line-height: 1.8; font-size: 1.1em;">
+            <li>Crear tu primera sala de debate</li>
+            <li>Configurar temas de discusión</li>
+            <li>Invitar estudiantes a participar</li>
+            <li>Revisar transcripciones y grafos</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <img src="assets/logoANI.svg" alt="ANI" style="max-width: 150px;" />
+          <img src="assets/logo.png" alt="CTEM" style="max-width: 120px;" />
+        </div>
+        <div style="margin-top: 30px; font-size: 0.9em; color: #ccc;">
+          <p>© 2024 Instituto Superior Tecnológico Sudamericano</p>
+          <p>Manual ANI - Assistant Neural Interface</p>
+        </div>
+      </div>
+
+      <!-- Página 23: Página en blanco (para que la página final esté sola) -->
+      <div style="background: #220447; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 600px; padding: 40px; text-align: center; box-sizing: border-box;">
+        <!-- Página en blanco -->
+      </div>
+
+
     </div>
-    <div class="manual-configurar-sala-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m3.png" alt="Configurar Sala" style="max-width: 260px; width: 100%; border-radius: 12px;" />
+
+      <!-- Versión de respaldo sin Turn.js -->
+  <div [style.display]="!useTurnJS ? 'block' : 'none'" class="page-container">
+              <div *ngIf="currentPage === 1" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="assets/logoANI.svg" alt="ANI" style="max-width: 200px; margin-bottom: 30px;" />
+        <h1 style="font-size: 3em; margin-bottom: 20px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">ANI</h1>
+        <h2 style="font-size: 1.5em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Assistant Neural Interface</h2>
+        <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent, rgba(139, 0, 255, 0.5), transparent); margin: 20px 0;"></div>
+        <p style="font-size: 1.3em; line-height: 1.6; max-width: 400px; text-align: center;">
+          Aplicación de debates y generación de grafos de conocimiento
+        </p>
+      </div>
+
+              <div *ngIf="currentPage === 2" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h1 style="font-size: 3em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">Manual ANI</h1>
+        <p style="font-size: 1.4em; line-height: 1.6; max-width: 500px; margin-bottom: 30px;">
+          Guía completa para el uso de la plataforma ANI (Assistant Neural Interface)
+        </p>
+        <div style="padding: 25px; background: rgba(139, 0, 255, 0.1); border-radius: 15px; border: 1px solid rgba(139, 0, 255, 0.3);">
+          <h3 style="margin-bottom: 20px; color: #fff; font-size: 1.3em;">Componentes del Sistema</h3>
+          <div style="display: flex; gap: 30px; justify-content: center;">
+            <div style="text-align: center;">
+              <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.2em;">Aplicación Web</h4>
+              <p style="font-size: 1em; color: #ccc;">Para docentes</p>
+            </div>
+            <div style="text-align: center;">
+              <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.2em;">Aplicación Móvil</h4>
+              <p style="font-size: 1em; color: #ccc;">Para estudiantes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                    <div *ngIf="currentPage === 3" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Instalación y Configuración</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Acceder a la plataforma:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                http://ctem.ec:5173/login
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Iniciar sesión:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Usuario: email institucional<br/>
+                Contraseña: ********
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 4" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Pantalla de Inicio de Sesión</h3>
+        <img src="assets/m1.png" alt="Instalación" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 5" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Crear una Sala</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">En el panel principal:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar clic en la opción "Rooms"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Crear sala:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                En el panel de Room List, dar clic en el botón "Create Room"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 6" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Room List</h3>
+        <img src="assets/m2.png" alt="Crear Sala" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 7" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Configurar Sala</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Nombre de la sala:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Matemática de Conjuntos"
+              </div>
+            </li>
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Descripción (opcional):</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Opcional"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Guardar configuración:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Click en "Create Room"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 8" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Formulario de Creación de Sala</h3>
+        <img src="assets/m3.png" alt="Configurar Sala" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 9" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Agregar Estudiantes</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Dar click en "Add User":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Seleccionar los estudiantes que pertenecen al debate del tema creado
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Confirmar usuarios:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Luego de seleccionar, dar click en "Añadir Usuarios"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 10" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Agregar Usuarios</h3>
+        <img src="assets/m4.png" alt="Agregar Estudiantes" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 11" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Definir Tema del Debate</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">En "Room List":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Identificar la sala donde se creará el tema
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Dar click en Topic:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Dar click en Topic"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 12" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Room List con Botón Topic</h3>
+        <img src="assets/m5.png" alt="Definir Tema" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 13" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Configuración del Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Ingrese el título del tema:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Álgebra Booleana"
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Crear tema:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar click en el botón con la flecha ">"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 14" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Formulario de Creación de Topic</h3>
+        <img src="assets/m6.png" alt="Configuración Topic" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 15" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Agregar Estudiantes al Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Dar click en "Add User":</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Seleccionar los estudiantes que pertenecen al debate del tema creado
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Confirmar usuarios:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Luego de seleccionar, dar click en "Añadir Usuarios"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 16" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Agregar Usuarios al Topic</h3>
+        <img src="assets/m7.png" alt="Agregar Estudiantes Topic" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 17" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Habilitación del Topic</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Habilitar el tema del debate:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar click en el switch
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Estado:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "Habilitado"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 18" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Habilitación de Topic</h3>
+        <img src="assets/m8.png" alt="Habilitación" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 19" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Transcripción del Debate</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Para visualizar las transcripciones:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Hacer clic en el botón
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Ver transcripción:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "View Transcript"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 20" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Panel de Transcripciones</h3>
+        <img src="assets/m9.png" alt="Transcripción" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 21" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 2.2em; margin-bottom: 40px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Visualización del Grafo</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ol style="padding-left: 20px; line-height: 2.5; font-size: 1.1em;">
+            <li style="margin-bottom: 30px;">
+              <strong style="font-size: 1.2em;">Para visualizar el grafo del debate:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                Dar clic en el botón
+              </div>
+            </li>
+            <li>
+              <strong style="font-size: 1.2em;">Ver grafo:</strong><br/>
+              <div style="margin-top: 15px; padding: 15px; background: rgba(139, 0, 255, 0.1); border-radius: 8px; border: 1px dashed rgba(139, 0, 255, 0.5); font-size: 1.1em;">
+                "View Graph"
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 22" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="font-size: 1.8em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5); text-align: center;">Visualización del Grafo de Conocimiento</h3>
+        <img src="assets/m10.png" alt="Visualización Grafo" style="max-width: 90%; max-height: 450px; border-radius: 15px; box-shadow: 0 0 20px rgba(139, 0, 255, 0.4);" />
+      </div>
+
+              <div *ngIf="currentPage === 23" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h1 style="font-size: 2.5em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(139, 0, 255, 0.5);">¡Manual Completado!</h1>
+        <p style="font-size: 1.3em; line-height: 1.6; max-width: 500px; margin-bottom: 30px;">
+          Has completado la guía del manual ANI. Ahora estás listo para utilizar la plataforma de manera efectiva.
+        </p>
+        <div style="padding: 25px; background: rgba(139, 0, 255, 0.1); border-radius: 15px; border: 1px solid rgba(139, 0, 255, 0.3); margin-bottom: 30px;">
+          <h3 style="margin-bottom: 20px; color: #fff; font-size: 1.3em;">Próximos Pasos</h3>
+          <ul style="text-align: left; line-height: 1.8; font-size: 1.1em;">
+            <li>Crear tu primera sala de debate</li>
+            <li>Configurar temas de discusión</li>
+            <li>Invitar estudiantes a participar</li>
+            <li>Revisar transcripciones y grafos</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <img src="assets/logoANI.svg" alt="ANI" style="max-width: 150px;" />
+          <img src="assets/logo.png" alt="CTEM" style="max-width: 120px;" />
+        </div>
+        <div style="margin-top: 30px; font-size: 0.9em; color: #ccc;">
+          <p>© 2024 Instituto Superior Tecnológico Sudamericano</p>
+          <p>Manual ANI - Assistant Neural Interface</p>
+        </div>
+      </div>
+
+              <div *ngIf="currentPage === 24" class="page-content animate" style="background: #220447; color: #fff; padding: 40px; min-height: 600px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <!-- Página en blanco -->
+      </div>
     </div>
   </div>
-  <div class="manual-configurar-sala2-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-configurar-sala2-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m4.png" alt="Agregar estudiantes a la sala" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-    <div class="manual-configurar-sala2-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Agregar estudiantes a la sala</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Dar click en la opción "Add User"
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Seleccionar los estudiantes que pertenecen a ese grupo"
-            </div>
-          </div>
-        </li>
-        <li>
-          Luego de seleccionar, dar click en  "Añadir Usuarios"
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Confirmar Usuarios"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="manual-definir-tema-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-definir-tema-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Definir tema del debate</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          En "Room List", identificar la sala donde se creará el tema
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Dar click en Topic"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-    <div class="manual-definir-tema-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m5.png" alt="Definir tema del debate" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-  </div>
-  <div class="manual-configuracion-topic-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-configuracion-topic-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m6.png" alt="Configuración del Topic" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-    <div class="manual-configuracion-topic-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Configuración del Topic (tema)</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Ingrese el título del tema
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Álgebra Booleana"
-            </div>
-          </div>
-        </li>
-        <li>
-          Dar click en el botón con la flecha ">"
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Creación del tema"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="manual-agregar-estudiantes-topic-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-agregar-estudiantes-topic-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Agregar estudiantes al topic (tema)</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Dar click en la opción "Add User"
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Seleccionar los estudiantes que pertenecen al debate del tema creado"
-            </div>
-          </div>
-        </li>
-        <li>
-          Luego de seleccionar, dar click en  "Añadir Usuarios"
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Confirmar Usuarios"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-    <div class="manual-agregar-estudiantes-topic-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m7.png" alt="Agregar estudiantes al topic" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-  </div>
-  <div class="manual-habilitacion-topic-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-habilitacion-topic-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Habilitación del topic</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Habilitar el tema del debate dando click en el switch
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "Habilitado"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-    <div class="manual-habilitacion-topic-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m8.png" alt="Habilitación del topic" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-  </div>
-  <div class="manual-transcripcion-debate-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-transcripcion-debate-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Transcripción del debate</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Para visualizar las transcripciones del debate hacer clic en el botón
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "View Transcript"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-    <div class="manual-transcripcion-debate-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m9.png" alt="Transcripción del debate" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-  </div>
-  <div class="manual-visualizacion-grafo-box" style="max-width: 900px; margin: 0 auto 64px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(80, 60, 160, 0.10); padding: 32px 28px; display: flex; align-items: center; gap: 32px;">
-    <div class="manual-visualizacion-grafo-img" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/m10.png" alt="Visualización del grafo" style="max-width: 260px; width: 100%; border-radius: 12px;" />
-    </div>
-    <div class="manual-visualizacion-grafo-text" style="flex: 2; color: #4b2996;">
-      <h2 style="font-size: 1.4em; font-weight: bold; margin-bottom: 24px; color: #000;">Visualización del grafo</h2>
-      <ol style="padding-left: 18px; color: #2d176c;">
-        <li style="margin-bottom: 32px;">
-          Para visualizar el grafo del debate dar clic en el botón
-          <div style="margin-top: 16px; display: flex; align-items: center;">
-            <span style="font-size: 2em; margin-right: 12px; color: #af9ef7;">&#8599;</span>
-            <div style="border: 2px dashed #af9ef7; border-radius: 8px; padding: 12px 24px; font-size: 1.1em; color: #4b2996; background: #faf7ff;">
-              "View Graph"
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
+
   <div class="footer mt-10" style="width: 100%;">
     <app-footer></app-footer>
   </div>

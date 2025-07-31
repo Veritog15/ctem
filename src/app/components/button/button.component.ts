@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class ButtonComponent {
 
   navigate() {
-    window.location.href = 'http://ctem.ec:5173/';
+    window.location.href = 'https://app.ctem.ec';
   }
   
 }

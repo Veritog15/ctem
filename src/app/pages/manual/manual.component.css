@@ -1,9 +1,474 @@
-.manual-card {
-  transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);
+/* Estilos para el libro interactivo */
+#flipbook {
+  margin: 0 auto;
+  background: #220447;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(139, 0, 255, 0.4);
+}
+
+/* Estilos para las páginas del libro */
+#flipbook .page {
+  background: #220447;
+  color: #fff;
+  border: 1px solid rgba(139, 0, 255, 0.3);
+}
+
+/* Efectos de hover para los controles */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(139, 0, 255, 0.6) !important;
+}
+
+/* Animaciones para las páginas */
+#flipbook .page-wrapper {
+  transition: all 0.3s ease;
+}
+
+/* Estilos para los contenedores de información */
+.info-box {
+  background: rgba(139, 0, 255, 0.1);
+  border: 1px dashed rgba(139, 0, 255, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  background: rgba(139, 0, 255, 0.2);
+  border-color: rgba(139, 0, 255, 0.8);
+}
+
+/* Responsive design para el libro */
+@media (max-width: 900px) {
+  #flipbook {
+    width: 100% !important;
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #flipbook {
+    width: 100% !important;
+    height: 400px !important;
+  }
+}
+
+/* Estilos para los controles de navegación */
+.book-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.book-controls button {
+  background: #220447;
+  color: #fff;
+  border: 1px solid rgba(139, 0, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.book-controls button:hover {
+  background: rgba(139, 0, 255, 0.2);
+  box-shadow: 0 0 15px rgba(139, 0, 255, 0.5);
+}
+
+/* Estilos para el contenedor del libro */
+.book-container {
+  background: #220447;
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(139, 0, 255, 0.3), inset 0 0 20px rgba(139, 0, 255, 0.1);
+  padding: 20px;
+  border: 1px solid rgba(139, 0, 255, 0.2);
+  margin-bottom: 40px;
+}
+
+/* Animaciones para la versión de respaldo */
+.page-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  min-height: 600px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.page-content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Animación de aparición */
+.page-content.animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Layout responsive para el contenido de las páginas */
+.page-content .content-wrapper {
+  display: flex;
+  gap: 30px;
+  height: auto;
+  min-height: 500px;
+  align-items: flex-start;
+}
+
+.page-content .text-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-content .image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+/* ESTILOS ESPECÍFICOS PÁGINA POR PÁGINA */
+
+/* Página 1: Portada - Imagen pequeña */
+.page-content:first-child img,
+#flipbook .page:first-child img {
+  max-width: 120px !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(139, 0, 255, 0.3) !important;
+  transition: all 0.3s ease !important;
   cursor: pointer;
 }
-.manual-card:hover {
-  transform: scale(1.06);
-  box-shadow: 0 12px 32px rgba(80, 60, 160, 0.18);
-  z-index: 2;
+
+.page-content:first-child img:hover,
+#flipbook .page:first-child img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 15px rgba(139, 0, 255, 0.5) !important;
+}
+
+        /* Página 2: Instalación */
+        .page-content:nth-child(2) img,
+        #flipbook .page:nth-child(2) img {
+          max-width: 300px !important;
+          max-height: 350px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(2) img:hover,
+#flipbook .page:nth-child(2) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 3: Crear Sala */
+        .page-content:nth-child(3) img,
+        #flipbook .page:nth-child(3) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(3) img:hover,
+#flipbook .page:nth-child(3) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 4: Configurar Sala */
+        .page-content:nth-child(4) img,
+        #flipbook .page:nth-child(4) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(4) img:hover,
+#flipbook .page:nth-child(4) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 5: Agregar Estudiantes */
+        .page-content:nth-child(5) img,
+        #flipbook .page:nth-child(5) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(5) img:hover,
+#flipbook .page:nth-child(5) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 6: Definir Tema */
+        .page-content:nth-child(6) img,
+        #flipbook .page:nth-child(6) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(6) img:hover,
+#flipbook .page:nth-child(6) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 7: Configuración Topic */
+        .page-content:nth-child(7) img,
+        #flipbook .page:nth-child(7) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(7) img:hover,
+#flipbook .page:nth-child(7) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 8: Agregar Estudiantes Topic */
+        .page-content:nth-child(8) img,
+        #flipbook .page:nth-child(8) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(8) img:hover,
+#flipbook .page:nth-child(8) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 9: Habilitación */
+        .page-content:nth-child(9) img,
+        #flipbook .page:nth-child(9) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(9) img:hover,
+#flipbook .page:nth-child(9) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 10: Transcripción */
+        .page-content:nth-child(10) img,
+        #flipbook .page:nth-child(10) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(10) img:hover,
+#flipbook .page:nth-child(10) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+        /* Página 11: Visualización Grafo */
+        .page-content:nth-child(11) img,
+        #flipbook .page:nth-child(11) img {
+          max-width: 280px !important;
+          max-height: 320px !important;
+          width: auto !important;
+          height: auto !important;
+          object-fit: contain !important;
+          border-radius: 12px !important;
+          box-shadow: 0 0 15px rgba(139, 0, 255, 0.3) !important;
+          transition: all 0.3s ease !important;
+          cursor: pointer;
+        }
+
+.page-content:nth-child(11) img:hover,
+#flipbook .page:nth-child(11) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(139, 0, 255, 0.6) !important;
+}
+
+/* Página 12: Final - Sin imagen */
+.page-content:nth-child(12) img,
+#flipbook .page:nth-child(12) img {
+  max-width: 120px !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(139, 0, 255, 0.3) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+
+.page-content:nth-child(12) img:hover,
+#flipbook .page:nth-child(12) img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 15px rgba(139, 0, 255, 0.5) !important;
+}
+
+/* Efectos hover para títulos */
+#flipbook h2:hover, .page-content h2:hover {
+  text-shadow: 0 0 15px rgba(139, 0, 255, 0.7), 0 0 25px rgba(139, 0, 255, 0.5) !important;
+  transition: all 0.3s ease;
+}
+
+/* Efectos hover para elementos de lista */
+#flipbook ol li:hover, .page-content ol li:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+#flipbook ol li strong:hover, .page-content ol li strong:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(139, 0, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* Efectos de transición para los botones */
+.nav-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(139, 0, 255, 0.6);
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+
+/* Indicador de página con animación */
+.page-indicator {
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  background: rgba(139, 0, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(139, 0, 255, 0.3);
+}
+
+.page-indicator:hover {
+  background: rgba(139, 0, 255, 0.2);
+  box-shadow: 0 0 10px rgba(139, 0, 255, 0.3);
+}
+
+/* Responsive design para el contenido */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  .page-content .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .page-content .text-section,
+  .page-content .image-section {
+    flex: none;
+    width: 100%;
+  }
+  
+  /* Imágenes más pequeñas en móvil */
+  .page-content:nth-child(n+2):nth-child(-n+11) img,
+  #flipbook .page:nth-child(n+2):nth-child(-n+11) img {
+    max-width: 100% !important;
+    max-height: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 15px;
+  }
+  
+  .page-content h2 {
+    font-size: 1.5em !important;
+  }
+  
+  /* Imágenes aún más pequeñas en móvil pequeño */
+  .page-content:nth-child(n+2):nth-child(-n+11) img,
+  #flipbook .page:nth-child(n+2):nth-child(-n+11) img {
+    max-height: 250px !important;
+  }
 }
